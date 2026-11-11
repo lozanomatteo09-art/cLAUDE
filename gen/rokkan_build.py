@@ -301,3 +301,44 @@ page = f"""<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name
 os.makedirs(OUT, exist_ok=True)
 open(os.path.join(OUT, 'index.html'), 'w', encoding='utf-8').write(page)
 print('OK', len(cats), 'categorías', sum(len(c[2]) for c in cats), 'platillos', len(page) // 1024, 'KB')
+
+# ---------- separar: inicio con "lo más pedido" + página de menú aparte ----------
+ini = page.index('<section class="menu" id="menu">'); fin = page.index('</section>', ini) + len('</section>')
+destacados = ['Ramen', 'Tan Tan men · Spicy', 'Rokkan roll', 'Dragon', 'Chirashi', 'Gyozas']
+todos = {html.unescape(it['n']): it for _, _, its in cats for it in its}
+cards = ''
+for n in destacados:
+    it = todos.get(n)
+    if not it: continue
+    ph = small(it['img']) if it['img'] else None
+    fig = f'<img class="th" src="{ph}" alt="{E(n)}">' if ph else ''
+    cards += f'<div class="mi{" con" if ph else ""}">{fig}<div class="tx"><div class="nl"><h4>{it["n"]}</h4><span class="pr">{it["pr"]}</span></div><p>{it["ps"][0] if it["ps"] else ""}</p></div></div>'
+home_menu = f'''<section class="menu" id="menu"><div class="w split" style="align-items:start">
+<figure style="border-radius:28px;overflow:hidden;aspect-ratio:4/5"><img src="{SUSHI}" alt="Sushi de Rokkan"></figure><div>
+<span class="jp">お品書き</span><h2 class="serif">Lo más pedido</h2>
+<div class="mg" style="grid-template-columns:1fr">{cards}</div>
+<div class="cta" style="margin-top:30px"><a class="btn fill" href="menu/">Ver menú completo</a><a class="btn" href="#reservar">Reservar mesa</a></div>
+<p class="mnote">Más de 70 platillos: ramen, makis, sushi tradicional, entradas, fuertes, postres y bebidas.</p></div></div></section>'''
+home = page[:ini] + home_menu + page[fin:]
+home = home.replace('href="#menu">Menú</a>', 'href="menu/">Menú</a>')
+open(os.path.join(OUT, 'index.html'), 'w', encoding='utf-8').write(home)
+
+head = page[:page.index('<header class="hero">')]
+head = head.replace('<title>Rokkan · Cocina japonesa en Coyoacán, Coapa y Del Valle</title>', '<title>Menú · Rokkan Cocina Japonesa</title>')
+for a in ('#menu', '#sucursales', '#resenas', '#reservar'):
+    head = head.replace(f'href="{a}"', f'href="../{a}"')
+head = head.replace('href="../#menu"', 'href="./"').replace('href="#" class="logo"', 'href="../" class="logo"')
+foot = page[page.index('<footer>'):]
+foot = foot.replace('href="#menu"', 'href="./"').replace('href="#', 'href="../#')
+foot = foot[:foot.index('<script>')] + '</body></html>'
+menu_page = head + f'''<header class="hero"><div class="w" style="grid-template-columns:1fr;padding-top:64px;padding-bottom:56px">
+<div><span class="jp">お品書き · MENÚ</span><h1 class="serif" style="margin-bottom:14px">Nuestro menú</h1>
+<p class="lead" style="margin-bottom:28px">Ramen, sushi tradicional, makis, tempura, postres y más.</p>
+<div class="cta"><a class="btn fill" href="../#reservar">Reservar mesa</a><a class="btn line" href="https://www.maspedidos.menu/rokkan/rokkan" target="_blank" rel="noopener">Pedir a domicilio</a></div></div></div></header>
+<section class="menu" style="padding-top:0"><div class="w"><nav class="chips" style="top:72px">{chips}</nav>{menu_html}
+<p class="mnote">Precios en pesos mexicanos, IVA incluido. Pueden variar por sucursal.</p>
+<div class="cta" style="margin-top:28px"><a class="btn fill" href="../#reservar">Reservar mesa</a><a class="btn" href="../">Volver al inicio</a></div></div></section>
+''' + foot.replace('<div class="mbar">', '<div class="mbar">').replace('href="./" style', 'href="../" style').replace('>Ver menú</a><a class="btn fill" href="../#reservar"', '>Inicio</a><a class="btn fill" href="../#reservar"')
+os.makedirs(os.path.join(OUT, 'menu'), exist_ok=True)
+open(os.path.join(OUT, 'menu', 'index.html'), 'w', encoding='utf-8').write(menu_page)
+print('inicio', len(home) // 1024, 'KB · menú', len(menu_page) // 1024, 'KB')
