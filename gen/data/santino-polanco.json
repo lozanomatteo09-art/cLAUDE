@@ -1,0 +1,62 @@
+{
+ "slug": "santino-polanco",
+ "nombre": "Santino Polanco",
+ "logo_texto": "santino",
+ "tipo": "comida",
+ "paleta": "vino",
+ "fuente": "cormorant",
+ "eyebrow": "Cocina italiana · Polanco",
+ "colonia": "Polanco",
+ "h1": "Pizza, pasta y una terraza sobre Masaryk.",
+ "intro": "Pizza al horno, pastas hechas en casa y ensaladas frescas en una terraza cubierta en el corazón de Polanco.",
+ "nosotros_eyebrow": "Nuestra casa",
+ "nosotros_titulo": "Un italiano con ambiente, en plena Masaryk.",
+ "nosotros_texto": "Comidas largas, cenas con amigos y un servicio que nuestros clientes recuerdan. Ven a la terraza cubierta y quédate un rato más.",
+ "rating": 4.6,
+ "num_resenas": "3,670",
+ "meta2": [
+  "Terraza",
+  "cubierta sobre Masaryk"
+ ],
+ "fotos": [
+  "https://lh3.googleusercontent.com/grass-cs/AABkmLcKoPPbnM4ZeqCFGLC_AeGo9MtzDLtZQEcMwSJtLY2V1zvdKYSv06SbwyUlaoi9JVbOmksJHdu16xRaONv34U9bPjsAVhdderh0ZfUSTfaDzfZzBcofXVxQ_ppThOMN1YXnXJqAC8RmXZWq=s4800-w1200",
+  "https://lh3.googleusercontent.com/grass-cs/AABkmLdv-3EMUgALUWUAUDxhZmm41OZ-TB0WIEsDdG1dZa2DIfNjxxkihtXEHrmnYEAU05XGEOeO9lNg59obLqQrR2lh7rwPfXkI9VUpL_EyrzWkSZxxvuLFLOfV_hIyDKHjcn0cAg1HXjkgJI0j=s4800-w1200",
+  "https://lh3.googleusercontent.com/grass-cs/AABkmLe5eRg6nXYJ_9AQcH6GJ2G5GgBbBZmTWcf8mFZEa6bHqm5swyRSOPsv2kvYcBYbQm21pUuVO-TZ3v4n13cuVAip7wAj0gfqAKjKChyvPNO3YJVO-UlHtF2tT6zHic4WpaaaVX9ZuLHmafg=s4800-w1200",
+  "https://lh3.googleusercontent.com/grass-cs/AABkmLfmkaHalIRfbwjYYyPa5MGfWUu3jpm8AebM44kRMGoYbqKRtKrJ0d1Z1tEWe87TB2GsAZjy2G4L2Xb0O_4S_A8i9Ihnao7eTEfCsDuZKMlF4_yDztz0suZiDDJ4v5rYXXqjzhfJ5nclzguA=s4800-w1200",
+  "https://lh3.googleusercontent.com/grass-cs/AABkmLc2ZrIKsy8IGcataSIB8ql3Y42uurkXiEOrzYO4jaK1f1KC1AVZXFY2fG0o9vShP2xKOACaWD-69oZwnScW86vkg-iNgrbNDhKaIk2hOuG-mrdz76s2zWNj2-xpKJK8ZGr5X8pMZbHihl1D=s4800-w1200"
+ ],
+ "menu": [],
+ "sin_menu_texto": "Pizzas al horno, pastas hechas en casa, ensaladas y postres. Escríbenos y te mandamos la carta completa del día.",
+ "resenas": [
+  [
+   "Mi experiencia favorita en todo mi viaje a la CDMX: un restaurante precioso con gran ambiente, menú variado y gran calidad.",
+   "Reseña en Google"
+  ],
+  [
+   "Comimos en la terraza cubierta. El servicio fue excepcional y las pizzas y ensaladas se veían increíbles.",
+   "Reseña en Google"
+  ],
+  [
+   "Gran calidad y porciones; volveremos a probar más del menú.",
+   "Reseña en Google"
+  ]
+ ],
+ "horario": [
+  [
+   "Lunes",
+   "12:00 pm – 12:00 am"
+  ],
+  [
+   "Martes a sábado",
+   "12:00 pm – 2:00 am"
+  ],
+  [
+   "Domingo",
+   "12:00 pm – 12:00 am"
+  ]
+ ],
+ "direccion": "Av. Pdte. Masaryk 178, Polanco, Miguel Hidalgo, CDMX",
+ "telefono": "56 1113 2673",
+ "whatsapp": "",
+ "maps_url": "https://www.google.com/maps/search/?api=1&query=Santino%20Polanco&query_place_id=ChIJ3QrC9f8B0oUR3rkvW67lrMU"
+}

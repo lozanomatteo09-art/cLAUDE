@@ -1,0 +1,117 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><title>Santino Polanco · Cocina italiana · Polanco</title>
+<meta name="description" content="Pizza al horno, pastas hechas en casa y ensaladas frescas en una terraza cubierta en el corazón de Polanco.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600;1,700&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--hero:#3b1e23;--foot:#2b1519;--cream:#f5ece7;--paper:#fcf8f6;--ink:#26191b;--muted:#6f6062;--acc:#b4473b;--accl:#e89a8c;--eyeb:#dcbcae;--line:rgba(0,0,0,.12)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font:400 16px/1.6 Manrope,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}img{display:block;width:100%;height:100%;object-fit:cover;background:#ddd}
+.w{max-width:1180px;margin:0 auto;padding:0 24px}
+.serif{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;letter-spacing:-.01em}
+.demo{background:#111;color:#eee;font-size:12px;text-align:center;padding:7px 12px;letter-spacing:.02em}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase}
+.btn{display:inline-flex;align-items:center;justify-content:center;height:50px;padding:0 28px;border-radius:999px;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;border:1.5px solid currentColor;text-align:center}
+.btn.fill{background:var(--acc);border-color:var(--acc);color:#fff}
+nav{position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:1px solid var(--line)}
+nav .w{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.logo{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:700;font-style:italic;color:var(--acc);line-height:1}
+.links{display:flex;align-items:center;gap:32px;font-size:14px;color:var(--muted)}
+.links .btn{height:42px;padding:0 22px;font-size:12px}
+.hero{background:var(--hero);color:var(--cream)}
+.hero .w{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding-top:80px;padding-bottom:80px}
+.hero .eyebrow{color:var(--eyeb);margin-bottom:22px}
+.hero h1{font-size:clamp(42px,5.6vw,72px);line-height:1.03;margin-bottom:24px}
+.hero p{font-size:17px;opacity:.85;max-width:450px;margin-bottom:36px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.hero .btn.line{color:var(--cream)}
+.hero figure{border-radius:28px;overflow:hidden;aspect-ratio:4/5}
+.meta{display:flex;gap:28px;margin-top:40px;padding-top:28px;border-top:1px solid rgba(255,255,255,.18);font-size:14px;opacity:.9}
+.meta b{display:block;font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:600;line-height:1.1}
+section{padding:110px 0}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.split figure{border-radius:28px;overflow:hidden;aspect-ratio:4/3}
+.split .eyebrow{color:var(--acc);margin-bottom:18px}
+h2{font-size:clamp(34px,4.2vw,54px);line-height:1.06;margin-bottom:22px}
+.lead{color:var(--muted);font-size:17px;max-width:470px;margin-bottom:30px}
+.menu{background:var(--cream)}
+.menu .grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:start}
+.menu figure{border-radius:28px;overflow:hidden;aspect-ratio:4/5;position:sticky;top:110px}
+.item{display:flex;justify-content:space-between;gap:24px;padding:22px 0;border-bottom:1px solid var(--line)}
+.item h3{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600;line-height:1.15;margin-bottom:4px}
+.item p{color:var(--muted);font-size:15px}
+.item .pr{font-weight:700;white-space:nowrap;padding-top:4px}
+.cat{font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);margin:34px 0 4px}.cat:first-of-type{margin-top:8px}
+.menu .note{margin-top:28px;font-size:14px;color:var(--muted)}
+.band{background:var(--acc);color:#fff;padding:96px 0}
+.band .eyebrow{opacity:.85;margin-bottom:28px;text-align:center}
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.quote{border-top:1px solid rgba(255,255,255,.35);padding-top:24px}
+.quote p{font-family:'Cormorant Garamond',serif;font-size:24px;line-height:1.28;font-weight:500;margin-bottom:18px}
+.quote span{font-size:12px;letter-spacing:.14em;text-transform:uppercase;opacity:.85}
+.score{text-align:center;margin-top:56px;font-size:15px;opacity:.9}
+.score b{font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:600;display:block;line-height:1}
+.visit .rows{margin:8px 0 30px}
+.visit .row{display:grid;grid-template-columns:150px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);font-size:15px}
+.visit .row dt{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--acc);padding-top:3px}
+.visit .row a{border-bottom:1px solid var(--acc)}
+.visit figure{aspect-ratio:4/5;border-radius:28px;overflow:hidden}
+footer{background:var(--foot);color:rgba(255,255,255,.75);padding:72px 0 40px}
+footer .eyebrow{color:var(--eyeb);margin-bottom:22px}
+.strip{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:64px}
+.strip figure{border-radius:18px;overflow:hidden;aspect-ratio:1}
+.cols{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;font-size:14px}
+.cols .logo{font-size:46px;margin-bottom:16px;color:var(--accl)}
+.cols h4{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--eyeb);margin-bottom:14px}
+.cols li{list-style:none;margin-bottom:8px}
+.legal{margin-top:56px;padding-top:24px;border-top:1px solid rgba(255,255,255,.12);font-size:12px;opacity:.6;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.mbar{display:none}
+@media(max-width:860px){
+ .links a:not(.btn){display:none}
+ .hero .w{grid-template-columns:1fr;gap:36px;padding-top:44px;padding-bottom:56px}
+ .hero figure{aspect-ratio:4/4.4;order:-1;border-radius:22px}
+ .split,.menu .grid{grid-template-columns:1fr;gap:36px}
+ .menu figure{position:static;aspect-ratio:4/3.4}
+ section{padding:72px 0}.band{padding:72px 0}
+ .quotes{grid-template-columns:1fr;gap:22px}
+ .strip{grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:44px}
+ .cols{grid-template-columns:1fr 1fr;gap:28px}.cols>div:first-child{grid-column:1/-1}
+ .visit .row{grid-template-columns:110px 1fr}
+ .visit figure{order:-1;aspect-ratio:4/3}
+ body{padding-bottom:76px}
+ .mbar{display:flex;gap:10px;position:fixed;left:0;right:0;bottom:0;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:var(--paper);border-top:1px solid var(--line);z-index:6}
+ .mbar .btn{flex:1;height:48px;padding:0 12px}
+}</style></head><body>
+<div class="demo">MUESTRA DE DISEÑO PARA SANTINO POLANCO · Preparada por Matteo · No es el sitio oficial del negocio</div>
+<nav><div class="w"><a href="#" class="logo">santino</a><div class="links"><a href="#menu">Menú</a><a href="#nosotros">Nosotros</a><a href="#visitanos">Visítanos</a><a class="btn fill" href="tel:+525611132673">Reservar</a></div></div></nav>
+<header class="hero"><div class="w"><div>
+<p class="eyebrow">Cocina italiana · Polanco</p>
+<h1 class="serif">Pizza, pasta y una terraza sobre Masaryk.</h1>
+<p>Pizza al horno, pastas hechas en casa y ensaladas frescas en una terraza cubierta en el corazón de Polanco.</p>
+<div class="cta"><a class="btn line" href="#menu">Ver menú</a><a class="btn fill" href="tel:+525611132673">Reservar mesa</a></div>
+<div class="meta"><div><b>4.6 ★</b>3,670 reseñas en Google</div><div><b>Terraza</b>cubierta sobre Masaryk</div></div>
+</div><figure><img src="https://lh3.googleusercontent.com/grass-cs/AABkmLcKoPPbnM4ZeqCFGLC_AeGo9MtzDLtZQEcMwSJtLY2V1zvdKYSv06SbwyUlaoi9JVbOmksJHdu16xRaONv34U9bPjsAVhdderh0ZfUSTfaDzfZzBcofXVxQ_ppThOMN1YXnXJqAC8RmXZWq=s4800-w1200" alt="Santino Polanco"></figure></div></header>
+<section id="nosotros"><div class="w split"><figure><img src="https://lh3.googleusercontent.com/grass-cs/AABkmLdv-3EMUgALUWUAUDxhZmm41OZ-TB0WIEsDdG1dZa2DIfNjxxkihtXEHrmnYEAU05XGEOeO9lNg59obLqQrR2lh7rwPfXkI9VUpL_EyrzWkSZxxvuLFLOfV_hIyDKHjcn0cAg1HXjkgJI0j=s4800-w1200" alt="Santino Polanco" loading="lazy"></figure><div>
+<p class="eyebrow">Nuestra casa</p><h2 class="serif">Un italiano con ambiente, en plena Masaryk.</h2>
+<p class="lead">Comidas largas, cenas con amigos y un servicio que nuestros clientes recuerdan. Ven a la terraza cubierta y quédate un rato más.</p>
+<a class="btn" style="color:var(--acc)" href="#menu">Ver la carta</a></div></div></section>
+<section class="menu" id="menu"><div class="w grid"><figure><img src="https://lh3.googleusercontent.com/grass-cs/AABkmLe5eRg6nXYJ_9AQcH6GJ2G5GgBbBZmTWcf8mFZEa6bHqm5swyRSOPsv2kvYcBYbQm21pUuVO-TZ3v4n13cuVAip7wAj0gfqAKjKChyvPNO3YJVO-UlHtF2tT6zHic4WpaaaVX9ZuLHmafg=s4800-w1200" alt="Santino Polanco" loading="lazy"></figure><div>
+<p class="eyebrow" style="color:var(--acc);margin-bottom:18px">El menú</p><h2 class="serif">La carta</h2>
+<p class="lead">Pizzas al horno, pastas hechas en casa, ensaladas y postres. Escríbenos y te mandamos la carta completa del día.</p>
+<div class="cta" style="margin-top:30px"><a class="btn fill" href="tel:+525611132673">Reservar mesa</a></div></div></div></section>
+<div class="band"><div class="w"><p class="eyebrow">Lo que dicen nuestros clientes</p><div class="quotes"><div class="quote"><p>“Mi experiencia favorita en todo mi viaje a la CDMX: un restaurante precioso con gran ambiente, menú variado y gran calidad.”</p><span>Reseña en Google</span></div><div class="quote"><p>“Comimos en la terraza cubierta. El servicio fue excepcional y las pizzas y ensaladas se veían increíbles.”</p><span>Reseña en Google</span></div><div class="quote"><p>“Gran calidad y porciones; volveremos a probar más del menú.”</p><span>Reseña en Google</span></div></div>
+<div class="score"><b>4.6 de 5</b>con 3,670 reseñas en Google</div></div></div>
+<section class="visit" id="visitanos"><div class="w split"><div>
+<p class="eyebrow">Visítanos</p><h2 class="serif">Te esperamos en la Polanco.</h2>
+<dl class="rows"><div class="row"><dt>Lunes</dt><dd>12:00 pm – 12:00 am</dd></div><div class="row"><dt>Martes a sábado</dt><dd>12:00 pm – 2:00 am</dd></div><div class="row"><dt>Domingo</dt><dd>12:00 pm – 12:00 am</dd></div><div class="row"><dt>Dirección</dt><dd>Av. Pdte. Masaryk 178, Polanco, Miguel Hidalgo, CDMX · <a href="https://www.google.com/maps/search/?api=1&amp;query=Santino%20Polanco&amp;query_place_id=ChIJ3QrC9f8B0oUR3rkvW67lrMU" target="_blank" rel="noopener">Abrir en Google Maps</a></dd></div><div class="row"><dt>Teléfono</dt><dd><a href="tel:+525611132673">56 1113 2673</a></dd></div></dl>
+<div class="cta"><a class="btn fill" href="tel:+525611132673">Reservar por teléfono</a><a class="btn" style="color:var(--ink)" href="https://www.google.com/maps/search/?api=1&amp;query=Santino%20Polanco&amp;query_place_id=ChIJ3QrC9f8B0oUR3rkvW67lrMU" target="_blank" rel="noopener">Cómo llegar</a></div>
+</div><figure><img src="https://lh3.googleusercontent.com/grass-cs/AABkmLfmkaHalIRfbwjYYyPa5MGfWUu3jpm8AebM44kRMGoYbqKRtKrJ0d1Z1tEWe87TB2GsAZjy2G4L2Xb0O_4S_A8i9Ihnao7eTEfCsDuZKMlF4_yDztz0suZiDDJ4v5rYXXqjzhfJ5nclzguA=s4800-w1200" alt="Santino Polanco" loading="lazy"></figure></div></section>
+<footer><div class="w"><p class="eyebrow">Galería</p><div class="strip"><figure><img src="https://lh3.googleusercontent.com/grass-cs/AABkmLc2ZrIKsy8IGcataSIB8ql3Y42uurkXiEOrzYO4jaK1f1KC1AVZXFY2fG0o9vShP2xKOACaWD-69oZwnScW86vkg-iNgrbNDhKaIk2hOuG-mrdz76s2zWNj2-xpKJK8ZGr5X8pMZbHihl1D=s4800-w1200" alt="Santino Polanco" loading="lazy"></figure><figure><img src="https://lh3.googleusercontent.com/grass-cs/AABkmLcKoPPbnM4ZeqCFGLC_AeGo9MtzDLtZQEcMwSJtLY2V1zvdKYSv06SbwyUlaoi9JVbOmksJHdu16xRaONv34U9bPjsAVhdderh0ZfUSTfaDzfZzBcofXVxQ_ppThOMN1YXnXJqAC8RmXZWq=s4800-w1200" alt="Santino Polanco" loading="lazy"></figure><figure><img src="https://lh3.googleusercontent.com/grass-cs/AABkmLdv-3EMUgALUWUAUDxhZmm41OZ-TB0WIEsDdG1dZa2DIfNjxxkihtXEHrmnYEAU05XGEOeO9lNg59obLqQrR2lh7rwPfXkI9VUpL_EyrzWkSZxxvuLFLOfV_hIyDKHjcn0cAg1HXjkgJI0j=s4800-w1200" alt="Santino Polanco" loading="lazy"></figure><figure><img src="https://lh3.googleusercontent.com/grass-cs/AABkmLe5eRg6nXYJ_9AQcH6GJ2G5GgBbBZmTWcf8mFZEa6bHqm5swyRSOPsv2kvYcBYbQm21pUuVO-TZ3v4n13cuVAip7wAj0gfqAKjKChyvPNO3YJVO-UlHtF2tT6zHic4WpaaaVX9ZuLHmafg=s4800-w1200" alt="Santino Polanco" loading="lazy"></figure></div>
+<div class="cols"><div><div class="logo">santino</div><p>Av. Pdte. Masaryk 178, Polanco, Miguel Hidalgo, CDMX</p></div>
+<div><h4>Horario</h4><ul><li>Lunes · 12:00 pm – 12:00 am</li><li>Martes a sábado · 12:00 pm – 2:00 am</li><li>Domingo · 12:00 pm – 12:00 am</li></ul></div>
+<div><h4>Visita</h4><ul><li><a href="#menu">Menú</a></li><li><a href="#nosotros">Nosotros</a></li><li><a href="https://www.google.com/maps/search/?api=1&amp;query=Santino%20Polanco&amp;query_place_id=ChIJ3QrC9f8B0oUR3rkvW67lrMU" target="_blank" rel="noopener">Cómo llegar</a></li></ul></div>
+<div><h4>Reservas</h4><ul><li><a href="tel:+525611132673">Llamar</a></li><li><a href="tel:+525611132673">56 1113 2673</a></li></ul></div></div>
+<div class="legal"><span>© 2026 Santino Polanco</span><span>Muestra de diseño · Fotos y reseñas de Google</span></div></div></footer>
+<div class="mbar"><a class="btn" href="#menu" style="color:var(--ink)">Ver menú</a><a class="btn fill" href="tel:+525611132673">Reservar</a></div>
+</body></html>
