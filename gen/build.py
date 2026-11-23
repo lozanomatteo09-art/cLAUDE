@@ -41,7 +41,7 @@ def validar(d):
             falla(f"falta '{k}'")
     if d["tipo"] not in ("comida", "cita"):
         falla("tipo debe ser 'comida' o 'cita'")
-    fotos = [f for f in d.get("fotos", []) if str(f).startswith("https://")]
+    fotos = [f for f in d.get("fotos", []) if str(f).startswith(("https://","img/"))]
     if len(fotos) < 5:
         falla(f"se necesitan al menos 5 fotos https (hay {len(fotos)})")
     if len(d.get("resenas", [])) < 3:
@@ -78,7 +78,7 @@ def construir(d):
     else:
         accion, accion_txt, tgt = tel_href, f"{verbo_corto} por teléfono", ""
     maps = d["maps_url"]
-    f = [x for x in d["fotos"] if str(x).startswith("https://")]
+    f = [x for x in d["fotos"] if str(x).startswith(("https://","img/"))]
     HERO, LADO, CARTA, VISITA = f[0], f[1], f[2], f[3]
     galeria = (f[4:] + f[:4])[:4]
     logo = d.get("logo_texto") or nombre.lower()

@@ -1,0 +1,117 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><title>Alguito Vegano · Cocina mexicana 100% vegana · Condesa</title>
+<meta name="description" content="Tortas, quesabirria de setas, pambazos, chilaquiles y desayunos con quesos veganos hechos en casa. Café orgánico de Chiapas y pan recién horneado.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,600&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--hero:#203a33;--foot:#172b25;--cream:#eef1ea;--paper:#f9faf7;--ink:#18211e;--muted:#5f6964;--acc:#c96a3b;--accl:#eaa47f;--eyeb:#bfd1c4;--line:rgba(0,0,0,.12)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font:400 16px/1.6 Manrope,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}img{display:block;width:100%;height:100%;object-fit:cover;background:#ddd}
+.w{max-width:1180px;margin:0 auto;padding:0 24px}
+.serif{font-family:'Fraunces',Georgia,serif;font-weight:500;letter-spacing:-.01em}
+.demo{background:#111;color:#eee;font-size:12px;text-align:center;padding:7px 12px;letter-spacing:.02em}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase}
+.btn{display:inline-flex;align-items:center;justify-content:center;height:50px;padding:0 28px;border-radius:999px;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;border:1.5px solid currentColor;text-align:center}
+.btn.fill{background:var(--acc);border-color:var(--acc);color:#fff}
+nav{position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:1px solid var(--line)}
+nav .w{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.logo{font-family:'Fraunces',serif;font-size:30px;font-weight:700;font-style:italic;color:var(--acc);line-height:1}
+.links{display:flex;align-items:center;gap:32px;font-size:14px;color:var(--muted)}
+.links .btn{height:42px;padding:0 22px;font-size:12px}
+.hero{background:var(--hero);color:var(--cream)}
+.hero .w{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding-top:80px;padding-bottom:80px}
+.hero .eyebrow{color:var(--eyeb);margin-bottom:22px}
+.hero h1{font-size:clamp(42px,5.6vw,72px);line-height:1.03;margin-bottom:24px}
+.hero p{font-size:17px;opacity:.85;max-width:450px;margin-bottom:36px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.hero .btn.line{color:var(--cream)}
+.hero figure{border-radius:28px;overflow:hidden;aspect-ratio:4/5}
+.meta{display:flex;gap:28px;margin-top:40px;padding-top:28px;border-top:1px solid rgba(255,255,255,.18);font-size:14px;opacity:.9}
+.meta b{display:block;font-family:'Fraunces',serif;font-size:30px;font-weight:600;line-height:1.1}
+section{padding:110px 0}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.split figure{border-radius:28px;overflow:hidden;aspect-ratio:4/3}
+.split .eyebrow{color:var(--acc);margin-bottom:18px}
+h2{font-size:clamp(34px,4.2vw,54px);line-height:1.06;margin-bottom:22px}
+.lead{color:var(--muted);font-size:17px;max-width:470px;margin-bottom:30px}
+.menu{background:var(--cream)}
+.menu .grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:start}
+.menu figure{border-radius:28px;overflow:hidden;aspect-ratio:4/5;position:sticky;top:110px}
+.item{display:flex;justify-content:space-between;gap:24px;padding:22px 0;border-bottom:1px solid var(--line)}
+.item h3{font-family:'Fraunces',serif;font-size:24px;font-weight:600;line-height:1.15;margin-bottom:4px}
+.item p{color:var(--muted);font-size:15px}
+.item .pr{font-weight:700;white-space:nowrap;padding-top:4px}
+.cat{font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);margin:34px 0 4px}.cat:first-of-type{margin-top:8px}
+.menu .note{margin-top:28px;font-size:14px;color:var(--muted)}
+.band{background:var(--acc);color:#fff;padding:96px 0}
+.band .eyebrow{opacity:.85;margin-bottom:28px;text-align:center}
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.quote{border-top:1px solid rgba(255,255,255,.35);padding-top:24px}
+.quote p{font-family:'Fraunces',serif;font-size:24px;line-height:1.28;font-weight:500;margin-bottom:18px}
+.quote span{font-size:12px;letter-spacing:.14em;text-transform:uppercase;opacity:.85}
+.score{text-align:center;margin-top:56px;font-size:15px;opacity:.9}
+.score b{font-family:'Fraunces',serif;font-size:44px;font-weight:600;display:block;line-height:1}
+.visit .rows{margin:8px 0 30px}
+.visit .row{display:grid;grid-template-columns:150px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);font-size:15px}
+.visit .row dt{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--acc);padding-top:3px}
+.visit .row a{border-bottom:1px solid var(--acc)}
+.visit figure{aspect-ratio:4/5;border-radius:28px;overflow:hidden}
+footer{background:var(--foot);color:rgba(255,255,255,.75);padding:72px 0 40px}
+footer .eyebrow{color:var(--eyeb);margin-bottom:22px}
+.strip{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:64px}
+.strip figure{border-radius:18px;overflow:hidden;aspect-ratio:1}
+.cols{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;font-size:14px}
+.cols .logo{font-size:46px;margin-bottom:16px;color:var(--accl)}
+.cols h4{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--eyeb);margin-bottom:14px}
+.cols li{list-style:none;margin-bottom:8px}
+.legal{margin-top:56px;padding-top:24px;border-top:1px solid rgba(255,255,255,.12);font-size:12px;opacity:.6;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.mbar{display:none}
+@media(max-width:860px){
+ .links a:not(.btn){display:none}
+ .hero .w{grid-template-columns:1fr;gap:36px;padding-top:44px;padding-bottom:56px}
+ .hero figure{aspect-ratio:4/4.4;order:-1;border-radius:22px}
+ .split,.menu .grid{grid-template-columns:1fr;gap:36px}
+ .menu figure{position:static;aspect-ratio:4/3.4}
+ section{padding:72px 0}.band{padding:72px 0}
+ .quotes{grid-template-columns:1fr;gap:22px}
+ .strip{grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:44px}
+ .cols{grid-template-columns:1fr 1fr;gap:28px}.cols>div:first-child{grid-column:1/-1}
+ .visit .row{grid-template-columns:110px 1fr}
+ .visit figure{order:-1;aspect-ratio:4/3}
+ body{padding-bottom:76px}
+ .mbar{display:flex;gap:10px;position:fixed;left:0;right:0;bottom:0;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:var(--paper);border-top:1px solid var(--line);z-index:6}
+ .mbar .btn{flex:1;height:48px;padding:0 12px}
+}</style></head><body>
+<div class="demo">MUESTRA DE DISEÑO PARA ALGUITO VEGANO · Preparada por Matteo · No es el sitio oficial del negocio</div>
+<nav><div class="w"><a href="#" class="logo">alguito vegano</a><div class="links"><a href="#menu">Menú</a><a href="#nosotros">Nosotros</a><a href="#visitanos">Visítanos</a><a class="btn fill" href="tel:+525532531112">Reservar</a></div></div></nav>
+<header class="hero"><div class="w"><div>
+<p class="eyebrow">Cocina mexicana 100% vegana · Condesa</p>
+<h1 class="serif">Comida mexicana vegana, hecha en familia en la Condesa.</h1>
+<p>Tortas, quesabirria de setas, pambazos, chilaquiles y desayunos con quesos veganos hechos en casa. Café orgánico de Chiapas y pan recién horneado.</p>
+<div class="cta"><a class="btn line" href="#menu">Ver menú</a><a class="btn fill" href="tel:+525532531112">Reservar mesa</a></div>
+<div class="meta"><div><b>4.7 ★</b>830 reseñas en Google</div><div><b>100%</b>vegano y hecho en casa</div></div>
+</div><figure><img src="img/torta.jpg" alt="Alguito Vegano"></figure></div></header>
+<section id="nosotros"><div class="w split"><figure><img src="img/interior.jpg" alt="Alguito Vegano" loading="lazy"></figure><div>
+<p class="eyebrow">Nosotros</p><h2 class="serif">Un restaurante familiar, en una calle arbolada.</h2>
+<p class="lead">Somos un negocio familiar 100% vegano. Cocinamos los sabores de siempre de la comida mexicana, sin nada de origen animal, con ingredientes frescos y mucho cariño. Ven a desayunar, a comer o por un café con algo dulce.</p>
+<a class="btn" style="color:var(--acc)" href="#menu">Ver la carta</a></div></div></section>
+<section class="menu" id="menu"><div class="w grid"><figure><img src="img/quesabirria.jpg" alt="Alguito Vegano" loading="lazy"></figure><div>
+<p class="eyebrow" style="color:var(--acc);margin-bottom:18px">El menú</p><h2 class="serif">La carta</h2>
+<h4 class="cat">Para comer</h4><div class="item"><div><h3>Torta del Patrón</h3><p>Chorizo vegano, suadero de soya y salchicha. La reina de la casa.</p></div></div><div class="item"><div><h3>Quesabirria de setas</h3><p>Con su consomé para remojar.</p></div></div><div class="item"><div><h3>Pambazo vegano</h3></div></div><div class="item"><div><h3>Alitas de coliflor</h3><p>8 piezas rebozadas, crujientes por fuera y suaves por dentro.</p></div></div><div class="item"><div><h3>Tacos de suadero</h3></div></div><h4 class="cat">Desayunos</h4><div class="item"><div><h3>Chilaquiles</h3></div></div><div class="item"><div><h3>Enmoladas</h3></div></div><div class="item"><div><h3>Omelette de garbanzo con espárragos</h3></div></div><div class="item"><div><h3>Hot cakes de camote</h3><p>Tres hot cakes esponjosos con fruta fresca.</p></div></div><div class="item"><div><h3>Plato de fruta</h3><p>Fruta orgánica con yogurt y granola.</p></div></div><h4 class="cat">Café, pan y bebidas</h4><div class="item"><div><h3>Cinnamon Alguito Roll</h3></div></div><div class="item"><div><h3>Café orgánico de Chiapas</h3></div></div><div class="item"><div><h3>Té perlas de jazmín con leche de soya</h3></div></div><div class="item"><div><h3>Kombuchas artesanales</h3></div></div><p class="note">Una selección de nuestra carta. Pregunta por los platillos y el pan del día.</p>
+<div class="cta" style="margin-top:30px"><a class="btn fill" href="tel:+525532531112">Reservar mesa</a></div></div></div></section>
+<div class="band"><div class="w"><p class="eyebrow">Lo que dicen nuestros clientes</p><div class="quotes"><div class="quote"><p>“Uno de mis lugares favoritos de la CDMX: comida de calidad hecha con cuidado y pasión. Negocio familiar con un ambiente muy amable.”</p><span>Reseña en Google</span></div><div class="quote"><p>“Una comida fantástica de principio a fin. Los platillos son pensados y están presentados de forma hermosa.”</p><span>Reseña en Google</span></div><div class="quote"><p>“Un gran hallazgo de comida mexicana vegana en la Condesa. Excelente servicio y hospitalidad. Sabores memorables.”</p><span>Reseña en Google</span></div></div>
+<div class="score"><b>4.7 de 5</b>con 830 reseñas en Google</div></div></div>
+<section class="visit" id="visitanos"><div class="w split"><div>
+<p class="eyebrow">Visítanos</p><h2 class="serif">Te esperamos en la Condesa.</h2>
+<dl class="rows"><div class="row"><dt>Lunes</dt><dd>9:00 am – 3:00 pm</dd></div><div class="row"><dt>Martes</dt><dd>9:00 am – 5:00 pm</dd></div><div class="row"><dt>Miércoles</dt><dd>9:00 am – 9:00 pm</dd></div><div class="row"><dt>Jueves a sábado</dt><dd>9:00 am – 10:15 pm</dd></div><div class="row"><dt>Domingo</dt><dd>9:00 am – 9:30 pm</dd></div><div class="row"><dt>Dirección</dt><dd>Zamora 172, Local A, Condesa, Cuauhtémoc, CDMX · <a href="https://www.google.com/maps/search/?api=1&amp;query=Alguito%20Vegano&amp;query_place_id=ChIJl8Nd0TD_0YURyKPyjWoZFZw" target="_blank" rel="noopener">Abrir en Google Maps</a></dd></div><div class="row"><dt>Teléfono</dt><dd><a href="tel:+525532531112">55 3253 1112</a></dd></div></dl>
+<div class="cta"><a class="btn fill" href="tel:+525532531112">Reservar por teléfono</a><a class="btn" style="color:var(--ink)" href="https://www.google.com/maps/search/?api=1&amp;query=Alguito%20Vegano&amp;query_place_id=ChIJl8Nd0TD_0YURyKPyjWoZFZw" target="_blank" rel="noopener">Cómo llegar</a></div>
+</div><figure><img src="img/alitas.jpg" alt="Alguito Vegano" loading="lazy"></figure></div></section>
+<footer><div class="w"><p class="eyebrow">Galería</p><div class="strip"><figure><img src="img/pambazo.jpg" alt="Alguito Vegano" loading="lazy"></figure><figure><img src="img/hotcakes.jpg" alt="Alguito Vegano" loading="lazy"></figure><figure><img src="img/fruta.jpg" alt="Alguito Vegano" loading="lazy"></figure><figure><img src="img/cinnamon.jpg" alt="Alguito Vegano" loading="lazy"></figure></div>
+<div class="cols"><div><div class="logo">alguito vegano</div><p>Zamora 172, Local A, Condesa, Cuauhtémoc, CDMX</p></div>
+<div><h4>Horario</h4><ul><li>Lunes · 9:00 am – 3:00 pm</li><li>Martes · 9:00 am – 5:00 pm</li><li>Miércoles · 9:00 am – 9:00 pm</li><li>Jueves a sábado · 9:00 am – 10:15 pm</li><li>Domingo · 9:00 am – 9:30 pm</li></ul></div>
+<div><h4>Visita</h4><ul><li><a href="#menu">Menú</a></li><li><a href="#nosotros">Nosotros</a></li><li><a href="https://www.google.com/maps/search/?api=1&amp;query=Alguito%20Vegano&amp;query_place_id=ChIJl8Nd0TD_0YURyKPyjWoZFZw" target="_blank" rel="noopener">Cómo llegar</a></li><li><a href="https://www.instagram.com/alguitovegano/" target="_blank" rel="noopener">Instagram</a></li></ul></div>
+<div><h4>Reservas</h4><ul><li><a href="tel:+525532531112">Llamar</a></li><li><a href="tel:+525532531112">55 3253 1112</a></li></ul></div></div>
+<div class="legal"><span>© 2026 Alguito Vegano</span><span>Muestra de diseño · Fotos y reseñas de Google</span></div></div></footer>
+<div class="mbar"><a class="btn" href="#menu" style="color:var(--ink)">Ver menú</a><a class="btn fill" href="tel:+525532531112">Reservar</a></div>
+</body></html>
