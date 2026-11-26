@@ -129,5 +129,67 @@
  "maps_url": "https://www.google.com/maps/search/?api=1&query=Se%C3%B1or%20Jocho%20Le%C3%B3n&query_place_id=ChIJrxJVwKC_K4QR2Negaj8ZTQc",
  "sin_aviso": true,
  "logo_img": "logo.jpg",
- "indexar": true
+ "indexar": true,
+ "menu_pagina": true,
+ "menu_intro": "Jochos rifados, jochos tradicionales y más, preparados al momento con ingredientes frescos.",
+ "menu_completo": [
+  {
+   "categoria": "Jochos rifados · especialidades de la casa",
+   "nota": "Precio según la salchicha: pavo $79 · res $119 · salchicha del mes $119",
+   "items": [
+    [
+     "El Señor Jocho",
+     "Tocino, queso suizo, salsa de queso cheddar, queso fresco rallado, elote, champiñones, guacamole, Ruffles, jitomate, cebolla caramelizada, mayonesa, ketchup y mostaza."
+    ],
+    [
+     "Los Panchos (trío de quesos)",
+     "Tocino, queso suizo, salsa de queso cheddar, queso Philadelphia, cebolla caramelizada y mayonesa."
+    ],
+    [
+     "El DaVinci",
+     "Pepperoni, queso suizo, queso parmesano y salsa de pizza."
+    ],
+    [
+     "El Bronco",
+     "Tocino, queso suizo, salsa de queso cheddar, BBQ, aros de cebolla empanizados y cebolla caramelizada."
+    ],
+    [
+     "El Hula",
+     "Tocino, queso suizo, salsa de queso cheddar, piña, cebolla caramelizada, mayonesa, ketchup y mostaza."
+    ],
+    [
+     "El Tin Tán",
+     "Tocino, salsa de queso cheddar, jitomate, cebolla caramelizada, mayonesa, ketchup y mostaza."
+    ],
+    [
+     "El Chili Dog",
+     "Chili beans, queso suizo, salsa de queso cheddar, mostaza y cebolla caramelizada."
+    ]
+   ]
+  },
+  {
+   "categoria": "Jochos tradicionales",
+   "items": [
+    [
+     "El Chabelo",
+     "Salchicha de pavo, salsa de queso cheddar, jitomate, ketchup, mayonesa y mostaza.",
+     "$39"
+    ]
+   ]
+  },
+  {
+   "categoria": "Extras",
+   "items": [
+    [
+     "Pan ajo-parmesano",
+     "Agrégaselo a cualquier jocho.",
+     "+$10"
+    ],
+    [
+     "Hazlo combo",
+     "Pregunte por los combos disponibles en sucursal."
+    ]
+   ]
+  }
+ ]
 }

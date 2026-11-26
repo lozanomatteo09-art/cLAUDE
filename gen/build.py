@@ -255,6 +255,9 @@ if __name__ == "__main__":
         sys.exit(1)
     data = json.load(open(sys.argv[1], encoding="utf-8"))
     out = construir(data)
+    if data.get("menu_pagina"):
+        out = out.replace('href="#menu"', 'href="menu/"')
+        out = out.replace('<p class="note">', '<p class="note"><a href="menu/" style="font-weight:700;text-decoration:underline">Ver el menú completo →</a><br>', 1)
     raiz = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     carpeta = os.path.join(raiz, data["slug"])
     os.makedirs(carpeta, exist_ok=True)
