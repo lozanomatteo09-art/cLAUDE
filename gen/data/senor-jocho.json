@@ -194,5 +194,25 @@
    ],
    "foto": 7
   }
+ ],
+ "favoritos": [
+  [
+   "El Señor Jocho",
+   "El de la casa: tocino, queso suizo, cheddar, queso fresco, elote, champiñones, guacamole, Ruffles y cebolla caramelizada.",
+   "desde $79",
+   6
+  ],
+  [
+   "El Bronco",
+   "Tocino, queso suizo, salsa de queso cheddar, BBQ, aros de cebolla empanizados y cebolla caramelizada.",
+   "desde $79",
+   0
+  ],
+  [
+   "Hamburguesas",
+   "Carne de res en su punto, preparadas al momento y acompañadas de papas.",
+   "",
+   2
+  ]
  ]
 }

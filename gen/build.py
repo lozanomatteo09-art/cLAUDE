@@ -255,6 +255,23 @@ if __name__ == "__main__":
         sys.exit(1)
     data = json.load(open(sys.argv[1], encoding="utf-8"))
     out = construir(data)
+    if data.get("favoritos"):
+        import re as _re
+        fs = [x for x in data["fotos"] if str(x).startswith(("https://","img/"))]
+        cards = "".join(
+            f'<article class="fav"><figure><img src="{html.escape(fs[f[3]])}" alt="{html.escape(f[0])}" loading="lazy"></figure>'
+            f'<div class="fb"><div class="fh"><h3>{html.escape(f[0])}</h3>{f"<span>{html.escape(f[2])}</span>" if f[2] else ""}</div><p>{html.escape(f[1])}</p></div></article>'
+            for f in data["favoritos"])
+        sec = ('<section class="favs" id="menu"><div class="w"><p class="eyebrow" style="color:var(--acc);margin-bottom:14px">Los favoritos</p>'
+               '<div class="fhead"><h2 class="serif">Lo más pedido de la casa</h2><a class="btn fill" href="menu/">Ver el menú completo</a></div>'
+               f'<div class="fgrid">{cards}</div></div></section>')
+        out = _re.sub(r'<section class="menu" id="menu">.*?</section>', lambda m: sec, out, count=1, flags=_re.S)
+        css = (".favs{background:var(--cream);padding:110px 0}.fhead{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:44px}"
+               ".fgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}.fav{background:var(--paper);border-radius:24px;overflow:hidden;box-shadow:0 1px 0 var(--line)}"
+               ".fav figure{aspect-ratio:4/3;overflow:hidden}.fb{padding:22px 24px 26px}.fh{display:flex;justify-content:space-between;gap:14px;align-items:baseline}"
+               ".fh h3{font-size:24px;line-height:1.15}.fh span{font-weight:700;color:var(--acc);white-space:nowrap}.fb p{color:var(--muted);font-size:15px;margin-top:8px;line-height:1.55}"
+               "@media(max-width:820px){.favs{padding:72px 0}.fgrid{grid-template-columns:1fr}}")
+        out = out.replace("</style>", css + "</style>", 1)
     if data.get("menu_pagina"):
         out = out.replace('href="#menu"', 'href="menu/"')
         out = out.replace('<p class="note">', '<p class="note"><a href="menu/" style="font-weight:700;text-decoration:underline">Ver el menú completo →</a><br>', 1)
