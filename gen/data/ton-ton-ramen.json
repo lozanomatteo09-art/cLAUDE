@@ -1,0 +1,160 @@
+{
+ "slug": "ton-ton-ramen",
+ "nombre": "Ton Ton Ramen",
+ "logo_texto": "ton ton ramen",
+ "tipo": "comida",
+ "paleta": "tonton",
+ "fuente": "dmserif",
+ "eyebrow": "Ramen japonés · Aragón",
+ "colonia": "Rinconada de Aragón",
+ "titulo": "Ton Ton Ramen · Ramen japonés en Aragón",
+ "h1": "Mucho cerdito, mucho sabor, mucho Ton Ton.",
+ "intro": "Ramen tonkotsu, shoyu, miso y tan tan men, con caldos hechos en casa, chashu, nitamago y rayu. Ahora en Rinconada de Aragón.",
+ "nosotros_eyebrow": "Nosotros",
+ "nosotros_titulo": "Un ramen de barrio, con alma japonesa.",
+ "nosotros_texto": "En Ton Ton cocinamos ramen como se come en Japón: caldos espesos y llenos de sabor, fideos en su punto y toppings generosos. Llega por un tonkotsu, quédate por unas gyozas y un yakimeshi. ¡Itadakimasu!",
+ "rating": "4.1",
+ "num_resenas": "más de 1,700",
+ "meta2": [
+  "$199",
+  "el ramen de la casa"
+ ],
+ "fotos": [
+  "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QPn0vQM6MQRzu-PrZpwb8oV_mh1hgo3qMDYEnliuqu19sycaiE73iHEgKJ3jPi0H4EmSp2R23Gp716ewsVz2PUGODTlZTar7S5cr3F_BH3aANHULFvYmN--bWFsksiOamiwJv0=s4800-w1200",
+  "https://lh3.googleusercontent.com/grass-cs/AABkmLcwt2oSDLxGyiIbtNc4HnulAcuL-aOrJ3j0nXbOXLnGqVD4h4gaRaBnECb465fAhYoQp41t_shtXxkIyy4kUefmIKn0zGmP6-CNLqM-GiDf1GowWzXzlI3WNl5HUkiyJ6_c3czYxiC32QJ8=s4800-w1200",
+  "https://lh3.googleusercontent.com/grass-cs/AABkmLfcmqnh-QePPeCqlEdjntvlLQOoomwR5_IiWyhAV8fnYIK-e8MlBKWWWLMV1FxxuHBF168ykLsx324mPrKWJfQVsGPcAYvvt6Nc3s49CGToQx0cgEyW1_bmKKKPrnBaeNfGi5SW=s4800-w1200",
+  "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S7N3EYKqqP2CW6Q40RhmCq1emROmLr09U8yPK1A8F6KprMaARqXsLPhoKwEeiIJEwFazTRvhKfz_5PSTpAAxVD7nucRtKZiOztB87Bdl16gZ0KrKLgHjf6jKlgR4_JTlTJ_QO7=s4800-w1200",
+  "https://lh3.googleusercontent.com/grass-cs/AABkmLf1l21fyaoXR70xaeYpWuDjelUwc1JBAqbTLmsJ3MVkum5O5XeIqpiQ6NN0x23sEEF6mrD0B8RxSx0IMtfMCR91lDpbkMf4qIlu8JRDOtSQp3MA0WERPPq-8u0J2Lj9UEsRLmunug=s4800-w1200",
+  "https://lh3.googleusercontent.com/grass-cs/AABkmLfD2Sa7KJ6oji9HpJwouBzh53uMQiMogbT6_zcWfnDKUzqENiUbkrTS7HSCdxVzK5y-GW4ljbqnnkwyXYs5mlr5fs9XcDOzCRw7R7bVofHMclWrs7Gc092rdxv5Ef0TkJxUzQ=s4800-w1200",
+  "https://lh3.googleusercontent.com/grass-cs/AABkmLchDRp42ehNbl46KYx0i1-g3BzZaUqUA-G6gmImh1Tl76Vx8D62xkMYGLA4BbTnvg1gBPauFHJHHS191muecSEJhaOaXmJN1tfnnBzShz0Hkvj7OB20_6k9x-Ia-eEloudX3tzd=s4800-w1200",
+  "https://lh3.googleusercontent.com/grass-cs/AABkmLfogMe0qJ_QjTSVqu9EyJhVkYhe5kzZO5HypW_jO5Lu5uW62zflOjcExYh4kPxiY6u8HXslxeW-PbULgxDTKBNQTMxXLDTwnDAb0lCSYXS4Txv1qQ1zZswOdm0oDeu7FwBlRit5=s4800-w1200"
+ ],
+ "menu": [
+  {
+   "categoria": "Ramen",
+   "items": [
+    [
+     "Ton Ton (tonkotsu)",
+     "Caldo cremoso de cerdo, fideos, chashu, naruto, nitamago, elote, negi y rayu.",
+     "$199"
+    ],
+    [
+     "Shoyu",
+     "Caldo base de soya, fideos, chashu, naruto, nitamago, elote, negi y rayu.",
+     "$199"
+    ],
+    [
+     "Miso",
+     "Caldo de pasta japonesa de soya, fideos, chashu, naruto, nitamago, elote, negi y rayu.",
+     "$199"
+    ],
+    [
+     "Tori (pollo)",
+     "Caldo de pollo, fideos, pollo karaage, naruto, nitamago, elote, negi y rayu.",
+     "$199"
+    ],
+    [
+     "Tan Tan Men Spicy",
+     "Caldo de pasta de cacahuate muy picante, picadillo japonés, huevo, cebollín, ajonjolí y chicharrones de jalapeño.",
+     "$209"
+    ],
+    [
+     "Tan Tan Men Cremoso",
+     "Caldo cremoso de cacahuate con leche de soya, picadillo japonés, huevo, espinaca y elote.",
+     "$209"
+    ],
+    [
+     "Veggie Ramen",
+     "Caldo de vegetales, fideos, tofu frito, elote, moyashi, kizami nori, cebollín y rayu.",
+     "$189"
+    ],
+    [
+     "Aburasoba",
+     "Fideos salteados en salsa de la casa con chashu, moyashi, ajonjolí, negi, nitamago, nori y rayu.",
+     "$239"
+    ]
+   ]
+  },
+  {
+   "categoria": "Entradas y sopa",
+   "items": [
+    [
+     "Gyoza (3 piezas)",
+     "Empanadilla japonesa rellena de cerdo, con cebollín y salsa de chile dulce.",
+     "$89"
+    ],
+    [
+     "Edamame 120 g",
+     "Vaina de frijol de soya salteada con un toque picante.",
+     "$89"
+    ],
+    [
+     "Rollo primavera (2 piezas)",
+     "Vegetales con salsa de chile dulce.",
+     "$79"
+    ],
+    [
+     "Misoshiru",
+     "Caldo de miso con tofu, wakame y cebollín.",
+     "$69"
+    ]
+   ]
+  },
+  {
+   "categoria": "Gohan y yakimeshi",
+   "items": [
+    [
+     "Yakimeshi Ton Ton",
+     "Arroz frito con chashu flameado, elote, germen de soya, huevo y soya de la casa.",
+     "$129"
+    ],
+    [
+     "Yakimeshi mixto especial",
+     "Vegetales, camarón, res y pollo, con aguacate, queso crema, pasta tampico y aderezo spicy.",
+     "$129"
+    ],
+    [
+     "Yakimeshi gyu",
+     "Arroz frito con vegetales y sirloin.",
+     "$99"
+    ],
+    [
+     "Gohan con furikake",
+     "Arroz al vapor con condimento japonés.",
+     "$89"
+    ]
+   ]
+  }
+ ],
+ "nota_menu": "Una selección de la carta. También hay yakisoba, poke bowls, rollos y Salad Ramen.",
+ "resenas": [
+  [
+   "Desde que llegas te reciben con muy buena vibra y hasta te explican la historia detrás del nombre Ton Ton. Pedí el ramen tonkotsu y es una joya: el caldo de cerdo está espesito y lleno de sabor.",
+   "Reseña en Google · Aragón"
+  ],
+  [
+   "El ambiente es súper tranquilo, te transporta con sus colores y amo que se pueda ver al chef cocinando junto a la barra.",
+   "Reseña en Google · Ton Ton Roma"
+  ],
+  [
+   "El lugar es pequeño pero agradable, la música a un volumen adecuado y los baños limpios.",
+   "Reseña en Google · Ton Ton Roma"
+  ]
+ ],
+ "horario": [
+  [
+   "Lunes",
+   "12:00 – 9:00 pm"
+  ],
+  [
+   "Martes a domingo",
+   "12:30 – 9:00 pm"
+  ]
+ ],
+ "direccion": "Av. Carlos Hank González 120, local 12 FC, Rinconada de Aragón, Ecatepec, Edo. Méx.",
+ "telefono": "55 5777 4200",
+ "whatsapp": "",
+ "instagram": "",
+ "legal": "Fotos y reseñas de Google",
+ "maps_url": "https://www.google.com/maps/search/?api=1&query=Ton%20Ton%20Ramen%20Arag%C3%B3n&query_place_id=ChIJTzhPrQT70YURQUxI4JEH3t8"
+}

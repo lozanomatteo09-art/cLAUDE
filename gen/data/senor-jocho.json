@@ -1,0 +1,130 @@
+{
+ "slug": "senor-jocho",
+ "nombre": "Señor Jocho",
+ "logo_texto": "señor jocho",
+ "tipo": "comida",
+ "paleta": "mostaza",
+ "fuente": "fraunces",
+ "eyebrow": "Burgers & Jochos · León",
+ "colonia": "Jardines del Moral",
+ "titulo": "Señor Jocho · Hamburguesas y jochos en León",
+ "h1": "Jochos rifados y hamburguesas en el Moral.",
+ "intro": "Hot dogs con todo, hamburguesas jugosas, papas y malteadas, en un lugar relajado para ir con la familia o con los amigos.",
+ "nosotros_eyebrow": "Nosotros",
+ "nosotros_titulo": "Comida rápida, pero con ingredientes que se notan.",
+ "nosotros_texto": "En Señor Jocho armamos cada jocho y cada hamburguesa al momento, con porciones generosas y combinaciones que no vas a encontrar en otro lado. Ven a comer, échate un juego de mesa y quédate un rato.",
+ "rating": "4.6",
+ "num_resenas": "70",
+ "meta2": [
+  "Todos",
+  "los días de 2 a 10:30 pm"
+ ],
+ "fotos": [
+  "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RMP9PcFL2Pqwylx0cbjb2vqLsEl07frrow2AEcge6QesW1HampTvortvoSjPP_e0WXXFAZIeLx6V0T06C2UTCr6Ov3Xz5yO0eBEcvaHJgSiVgTNWPp0hFqCZZKe0nJyUAhlTPyUQ61DfPP=s4800-w1200",
+  "https://lh3.googleusercontent.com/grass-cs/AABkmLfVliVEcDOGyOjpEGqXSyWpL8fz9R0_wnC8PEDrIxPUXS2-yKwkpmvCdquZsWqMYR5yI64q_lAhOXPjFwt2wvSVuoicuxcTMO43Bk5_VvYf8XcqU96mb7cXhGOe-4AHpCkhRLUL=s4800-w1200",
+  "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q5rbDWLUDaoQtT8t9P6UEez6zBjY6VcPe2CxkAWPtfuAD5ahO9823K-JwgGeqparMxHHfEySk23mOOnDnc4vUNYzmd-D9PFX8wUHmgIVjGjVTfKHYS5gU2KvD6m7qnKKOBvQlhkOZtVypg=s4800-w1200",
+  "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Rnp-4dshFfvxykmyxs4JIcSp3w_uhYWAAe_K9tYTLBxIM_WOyGiNwizcz7-mQgUfo023sbSjHA7wx2vzvVyxFu1S-EZ43k3eKT_J1m7ic8sQrSotGDnmYku8Ph9c4GFxkzyZ9l=s4800-w1200",
+  "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RcOCmbASHjYVgGg4SBXXpQqx1g8tKHZCVUrWr_mBqhkrHDI6EKJH256WKRJzichlLav6YNUdP54JmFrnLZk-j2uqJp1PTEVC3-avq7AytDzOZWonziS6ISoc2Hi80CmUo1GkEHvA=s4800-w1200",
+  "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q6-S1R09zPeaAduiSYcFcefarzJQQPqnik4FbL6JFJCXT7l1GnpHAtNafI9h7NwBh6H84pXWyaqJMwPB2JIZ-02bL4PjPgPWXOdwP8yGWkpGJH1NXex8GobtTrz5fsE_TfSFzIQw=s4800-w1200",
+  "https://lh3.googleusercontent.com/grass-cs/AABkmLeSBFqvs16qwc6gWb0a_4hZwU-iL1lGwGRZxzzreHGseaUxGgEKTXxrTBrXUWi-2kU_2zVhyjV3NzvgUs84LTy884z0ogPWbfsxYO7kUEvVqPwvKtK4KqOKbzrAIjIQBAvxIUdc=s4800-w1200",
+  "https://lh3.googleusercontent.com/grass-cs/AABkmLebdhz4Gykokb_YTOvhuHkDVW5OpcR9m2n_HGiM8FSGYl6XEqGrNM5uK-fc7jUBX6GAfMdKlWgIOJCueWIk0syoB-rASNSW3kTnLFBYUYsQsCRcuL9JALHuYTPTB_xd8eorFLVBIhM-Vz4_=s4800-w1200"
+ ],
+ "menu": [
+  {
+   "categoria": "Jochos rifados",
+   "items": [
+    [
+     "El Señor Jocho",
+     "Tocino, queso suizo, salsa de queso cheddar, queso fresco rallado, elote, champiñones, guacamole, Ruffles, jitomate, cebolla caramelizada, mayonesa, ketchup y mostaza."
+    ],
+    [
+     "Los Panchos (trío de quesos)",
+     "Tocino, queso suizo, salsa de queso cheddar, queso Philadelphia, cebolla caramelizada y mayonesa."
+    ],
+    [
+     "El DaVinci",
+     "Pepperoni, queso suizo, queso parmesano y salsa de pizza."
+    ],
+    [
+     "El Bronco",
+     "Tocino, queso suizo, salsa de queso cheddar, BBQ, aros de cebolla empanizados y cebolla caramelizada."
+    ],
+    [
+     "El Hula",
+     "Tocino, queso suizo, salsa de queso cheddar, piña, cebolla caramelizada, mayonesa, ketchup y mostaza."
+    ],
+    [
+     "El Tin Tán",
+     "Tocino, salsa de queso cheddar, jitomate, cebolla caramelizada, mayonesa, ketchup y mostaza."
+    ],
+    [
+     "El Chili Dog",
+     "Chili beans, queso suizo, salsa de queso cheddar, mostaza y cebolla caramelizada."
+    ]
+   ]
+  },
+  {
+   "categoria": "Elige tu salchicha",
+   "items": [
+    [
+     "Salchicha de pavo",
+     "Para cualquier jocho rifado.",
+     "$79"
+    ],
+    [
+     "Salchicha de res",
+     "Para cualquier jocho rifado.",
+     "$119"
+    ],
+    [
+     "Salchicha del mes",
+     "Para cualquier jocho rifado.",
+     "$119"
+    ]
+   ]
+  },
+  {
+   "categoria": "Jochos tradicionales",
+   "items": [
+    [
+     "El Chabelo",
+     "Salchicha de pavo, salsa de queso cheddar, jitomate, ketchup, mayonesa y mostaza.",
+     "$39"
+    ],
+    [
+     "Pan ajo-parmesano",
+     "Agrégaselo a cualquier jocho.",
+     "+$10"
+    ]
+   ]
+  }
+ ],
+ "nota_menu": "Pregunta por nuestras hamburguesas, papas, crepas, malteadas y combos.",
+ "resenas": [
+  [
+   "No es solo una comida rápida; es una experiencia de sabor que te vuela la cabeza desde el primer bocado. Las hamburguesas son una verdadera joya, con carne en su punto y combinaciones que se sienten súper frescas.",
+   "Reseña en Google"
+  ],
+  [
+   "¡Muy ricas hamburguesas! Todo estuvo delicioso, las porciones muy buenas y se nota la calidad de los ingredientes. Sin duda, un lugar al que siempre vuelvo.",
+   "Reseña en Google"
+  ],
+  [
+   "Excelente sabor, fueron muy amables. Altamente recomiendo ir si quieren probar unos buenos hot dogs.",
+   "Reseña en Google"
+  ]
+ ],
+ "horario": [
+  [
+   "Lunes a domingo",
+   "2:00 – 10:30 pm"
+  ]
+ ],
+ "direccion": "Av. Paseo del Moral, Jardines del Moral, León, Gto.",
+ "telefono": "",
+ "whatsapp": "",
+ "instagram": "",
+ "cta_texto": "Cómo llegar",
+ "legal": "Fotos y reseñas de Google",
+ "maps_url": "https://www.google.com/maps/search/?api=1&query=Se%C3%B1or%20Jocho%20Le%C3%B3n&query_place_id=ChIJrxJVwKC_K4QR2Negaj8ZTQc"
+}

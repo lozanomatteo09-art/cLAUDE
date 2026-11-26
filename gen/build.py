@@ -20,6 +20,8 @@ PALETAS = {
     "cacao":  ("#3a2a20", "#2a1e17", "#f5ece2", "#fcf8f3", "#261d17", "#6f6358", "#c0703a", "#e8ad80", "#d9c2a5"),
     "rosa":   ("#46303a", "#33232a", "#f8eef0", "#fdf9fa", "#2a1f23", "#74656b", "#c8647d", "#efa6b7", "#e3c6cd"),
     "carbon": ("#1d1d1b", "#141413", "#efeae2", "#faf8f5", "#1b1b19", "#6b6862", "#b8893c", "#e0bd7c", "#cfc3ab"),
+    "tonton": ("#141214", "#0d0c0d", "#f7eef2", "#fdf9fb", "#1a1418", "#6e6268", "#d84f8f", "#f28dbd", "#f2bcd6"),
+    "mostaza":("#1d1b19", "#141312", "#f6f0e4", "#fdfaf4", "#1b1a18", "#6b6862", "#d9532b", "#f3c44a", "#ead9ae"),
     "verde":  ("#203a33", "#172b25", "#eef1ea", "#f9faf7", "#18211e", "#5f6964", "#c96a3b", "#eaa47f", "#bfd1c4"),
 }
 FUENTES = {
@@ -36,7 +38,7 @@ def falla(msg):
 
 
 def validar(d):
-    for k in ("slug", "nombre", "tipo", "h1", "intro", "direccion", "telefono", "maps_url"):
+    for k in ("slug", "nombre", "tipo", "h1", "intro", "direccion", "maps_url"):
         if not str(d.get(k, "")).strip():
             falla(f"falta '{k}'")
     if d["tipo"] not in ("comida", "cita"):
@@ -63,7 +65,7 @@ def construir(d):
     verbo = "Agendar cita" if cita else "Reservar mesa"
     verbo_corto = "Agendar" if cita else "Reservar"
     nombre = d["nombre"]
-    tel = d["telefono"]
+    tel = d.get("telefono", "").strip()
     tel_dig = "".join(c for c in tel if c.isdigit())
     tel_href = "tel:+52" + tel_dig[-10:]
     wa = d.get("whatsapp", "").strip()
@@ -77,7 +79,14 @@ def construir(d):
         tgt = ' target="_blank" rel="noopener"'
     else:
         accion, accion_txt, tgt = tel_href, f"{verbo_corto} por teléfono", ""
+    if not tel and not wa:
+        verbo_corto = verbo = "Cómo llegar"
+        accion, accion_txt, tgt = d["maps_url"], "Cómo llegar", ' target="_blank" rel="noopener"'
+    if d.get("cta_texto"):
+        verbo_corto = verbo = d["cta_texto"]
     maps = d["maps_url"]
+    tel_row = f'<div class="row"><dt>Teléfono</dt><dd><a href="{tel_href}">{E(tel)}</a></dd></div>' if tel else ""
+    contacto_col = (f"<div><h4>{'Citas' if cita else 'Reservas'}</h4><ul><li><a href=\"{E(accion)}\"{tgt}>{'WhatsApp' if wa else 'Llamar'}</a></li><li><a href=\"{tel_href}\">{E(tel)}</a></li></ul></div>") if (tel or wa) else ""
     f = [x for x in d["fotos"] if str(x).startswith(("https://","img/"))]
     HERO, LADO, CARTA, VISITA = f[0], f[1], f[2], f[3]
     galeria = (f[4:] + f[:4])[:4]
@@ -222,15 +231,15 @@ footer .eyebrow{{color:var(--eyeb);margin-bottom:22px}}
 <div class="score"><b>{E(rating)} de 5</b>con {E(nres)} reseñas en Google</div></div></div>
 <section class="visit" id="visitanos"><div class="w split"><div>
 <p class="eyebrow">Visítanos</p><h2 class="serif">{E(d.get('visita_titulo', 'Te esperamos' + (' en la ' + colonia if colonia else '') + '.'))}</h2>
-<dl class="rows">{rows}<div class="row"><dt>Dirección</dt><dd>{E(d['direccion'])} · <a href="{E(maps)}" target="_blank" rel="noopener">Abrir en Google Maps</a></dd></div><div class="row"><dt>Teléfono</dt><dd><a href="{tel_href}">{E(tel)}</a></dd></div></dl>
+<dl class="rows">{rows}<div class="row"><dt>Dirección</dt><dd>{E(d['direccion'])} · <a href="{E(maps)}" target="_blank" rel="noopener">Abrir en Google Maps</a></dd></div>{tel_row}</dl>
 <div class="cta"><a class="btn fill" href="{E(accion)}"{tgt}>{E(accion_txt)}</a><a class="btn" style="color:var(--ink)" href="{E(maps)}" target="_blank" rel="noopener">Cómo llegar</a></div>
 </div><figure><img src="{E(VISITA)}" alt="{E(nombre)}" loading="lazy"></figure></div></section>
 <footer><div class="w"><p class="eyebrow">Galería</p><div class="strip">{strip}</div>
 <div class="cols"><div><div class="logo">{E(logo)}</div><p>{E(d['direccion'])}</p></div>
 <div><h4>Horario</h4><ul>{hor_pie}</ul></div>
 <div><h4>Visita</h4><ul><li><a href="#menu">{'Servicios' if cita else 'Menú'}</a></li><li><a href="#nosotros">Nosotros</a></li><li><a href="{E(maps)}" target="_blank" rel="noopener">Cómo llegar</a></li>{ig_li}</ul></div>
-<div><h4>{'Citas' if cita else 'Reservas'}</h4><ul><li><a href="{E(accion)}"{tgt}>{'WhatsApp' if wa else 'Llamar'}</a></li><li><a href="{tel_href}">{E(tel)}</a></li></ul></div></div>
-<div class="legal"><span>© 2026 {E(nombre)}</span><span>Muestra de diseño · Fotos y reseñas de Google</span></div></div></footer>
+{contacto_col}</div>
+<div class="legal"><span>© 2026 {E(nombre)}</span><span>{E(d.get("legal", "Muestra de diseño · Fotos y reseñas de Google"))}</span></div></div></footer>
 <div class="mbar"><a class="btn" href="#menu" style="color:var(--ink)">{'Servicios' if cita else 'Ver menú'}</a><a class="btn fill" href="{E(accion)}"{tgt}>{E(verbo_corto)}</a></div>
 </body></html>"""
 
