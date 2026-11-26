@@ -24,7 +24,7 @@ for i, cat in enumerate(menu):
         items += (f'<div class="it"><div class="top"><h3>{E(n)}</h3><span class="dots"></span>'
                   f'{f"<b>{E(pr)}</b>" if pr else ""}</div>{f"<p>{E(desc)}</p>" if desc else ""}</div>')
     nota = f'<p class="cnota">{E(cat["nota"])}</p>' if cat.get("nota") else ""
-    foto = fotos[(i + 2) % len(fotos)]
+    foto = fotos[cat["foto"]] if "foto" in cat else fotos[(i + 2) % len(fotos)]
     secciones += (f'<section class="cat" id="c{i}"><div class="w g"><figure><img src="{E(foto)}" alt="{E(cat["categoria"])}" loading="lazy"></figure>'
                   f'<div><p class="eb">{E(nombre)}</p><h2>{E(cat["categoria"])}</h2>{nota}<div class="items">{items}</div></div></div></section>')
 chips = "".join(f'<a href="#c{i}">{E(c["categoria"].split(" · ")[0])}</a>' for i, c in enumerate(menu))

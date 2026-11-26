@@ -165,7 +165,8 @@
      "El Chili Dog",
      "Chili beans, queso suizo, salsa de queso cheddar, mostaza y cebolla caramelizada."
     ]
-   ]
+   ],
+   "foto": 6
   },
   {
    "categoria": "Jochos tradicionales",
@@ -175,7 +176,8 @@
      "Salchicha de pavo, salsa de queso cheddar, jitomate, ketchup, mayonesa y mostaza.",
      "$39"
     ]
-   ]
+   ],
+   "foto": 0
   },
   {
    "categoria": "Extras",
@@ -189,7 +191,8 @@
      "Hazlo combo",
      "Pregunte por los combos disponibles en sucursal."
     ]
-   ]
+   ],
+   "foto": 7
   }
  ]
 }
