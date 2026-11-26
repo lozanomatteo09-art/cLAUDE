@@ -22,6 +22,7 @@ PALETAS = {
     "carbon": ("#1d1d1b", "#141413", "#efeae2", "#faf8f5", "#1b1b19", "#6b6862", "#b8893c", "#e0bd7c", "#cfc3ab"),
     "tonton": ("#141214", "#0d0c0d", "#f7eef2", "#fdf9fb", "#1a1418", "#6e6268", "#d84f8f", "#f28dbd", "#f2bcd6"),
     "mostaza":("#1d1b19", "#141312", "#f6f0e4", "#fdfaf4", "#1b1a18", "#6b6862", "#d9532b", "#f3c44a", "#ead9ae"),
+    "jocho":  ("#181313", "#110d0d", "#fbf3e6", "#fffaf3", "#1c1616", "#6b6260", "#d7262e", "#f5c518", "#f5c518"),
     "verde":  ("#203a33", "#172b25", "#eef1ea", "#f9faf7", "#18211e", "#5f6964", "#c96a3b", "#eaa47f", "#bfd1c4"),
 }
 FUENTES = {
@@ -91,6 +92,9 @@ def construir(d):
     HERO, LADO, CARTA, VISITA = f[0], f[1], f[2], f[3]
     galeria = (f[4:] + f[:4])[:4]
     logo = d.get("logo_texto") or nombre.lower()
+    li = d.get("logo_img", "")
+    logo_html = (f'<img class="lgi" src="{E(li)}" alt="{E(nombre)}"><span>{E(logo)}</span>') if li else E(logo)
+    logo_pie = (f'<img class="lgi lgp" src="{E(li)}" alt="{E(nombre)}">') if li else E(logo)
     seccion_menu = "Servicios" if cita else "La carta"
     eyebrow_menu = "Lo que hacemos" if cita else "El menú"
     menu = d.get("menu") or []
@@ -182,6 +186,7 @@ footer .eyebrow{{color:var(--eyeb);margin-bottom:22px}}
 .strip{{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:64px}}
 .strip figure{{border-radius:18px;overflow:hidden;aspect-ratio:1}}
 .cols{{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;font-size:14px}}
+.logo:has(.lgi){{display:flex;align-items:center;gap:12px}}.lgi{{width:52px;height:52px;border-radius:50%;object-fit:cover;flex:none}}.lgp{{width:110px;height:110px}}
 .cols .logo{{font-size:46px;margin-bottom:16px;color:var(--accl)}}
 .cols h4{{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--eyeb);margin-bottom:14px}}
 .cols li{{list-style:none;margin-bottom:8px}}
@@ -205,13 +210,13 @@ footer .eyebrow{{color:var(--eyeb);margin-bottom:22px}}
 }}"""
 
     return f"""<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="noindex,nofollow"><title>{E(titulo)}</title>
+{'' if d.get("indexar") else '<meta name="robots" content="noindex,nofollow">'}<title>{E(titulo)}</title>{f'<link rel="icon" href="{E(d["logo_img"])}"><meta name="description" content="{E(d["intro"])}">' if d.get("logo_img") else ''}
 <meta name="description" content="{E(d['intro'])}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family={gf}&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
 <style>{css}</style></head><body>
 {"" if d.get("sin_aviso") else f'<div class="demo">MUESTRA DE DISEÑO PARA {E(nombre.upper())} · Preparada por Matteo · No es el sitio oficial del negocio</div>'}
-<nav><div class="w"><a href="#" class="logo">{E(logo)}</a><div class="links"><a href="#menu">{'Servicios' if cita else 'Menú'}</a><a href="#nosotros">Nosotros</a><a href="#visitanos">Visítanos</a><a class="btn fill" href="{E(accion)}"{tgt}>{E(verbo_corto)}</a></div></div></nav>
+<nav><div class="w"><a href="#" class="logo">{logo_html}</a><div class="links"><a href="#menu">{'Servicios' if cita else 'Menú'}</a><a href="#nosotros">Nosotros</a><a href="#visitanos">Visítanos</a><a class="btn fill" href="{E(accion)}"{tgt}>{E(verbo_corto)}</a></div></div></nav>
 <header class="hero"><div class="w"><div>
 <p class="eyebrow">{E(d.get('eyebrow', ''))}</p>
 <h1 class="serif">{E(d['h1'])}</h1>
@@ -235,7 +240,7 @@ footer .eyebrow{{color:var(--eyeb);margin-bottom:22px}}
 <div class="cta"><a class="btn fill" href="{E(accion)}"{tgt}>{E(accion_txt)}</a><a class="btn" style="color:var(--ink)" href="{E(maps)}" target="_blank" rel="noopener">Cómo llegar</a></div>
 </div><figure><img src="{E(VISITA)}" alt="{E(nombre)}" loading="lazy"></figure></div></section>
 <footer><div class="w"><p class="eyebrow">Galería</p><div class="strip">{strip}</div>
-<div class="cols"><div><div class="logo">{E(logo)}</div><p>{E(d['direccion'])}</p></div>
+<div class="cols"><div><div class="logo">{logo_pie}</div><p>{E(d['direccion'])}</p></div>
 <div><h4>Horario</h4><ul>{hor_pie}</ul></div>
 <div><h4>Visita</h4><ul><li><a href="#menu">{'Servicios' if cita else 'Menú'}</a></li><li><a href="#nosotros">Nosotros</a></li><li><a href="{E(maps)}" target="_blank" rel="noopener">Cómo llegar</a></li>{ig_li}</ul></div>
 {contacto_col}</div>
