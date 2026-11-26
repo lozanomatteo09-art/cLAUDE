@@ -126,5 +126,6 @@
  "instagram": "",
  "cta_texto": "Cómo llegar",
  "legal": "Fotos y reseñas de Google",
- "maps_url": "https://www.google.com/maps/search/?api=1&query=Se%C3%B1or%20Jocho%20Le%C3%B3n&query_place_id=ChIJrxJVwKC_K4QR2Negaj8ZTQc"
+ "maps_url": "https://www.google.com/maps/search/?api=1&query=Se%C3%B1or%20Jocho%20Le%C3%B3n&query_place_id=ChIJrxJVwKC_K4QR2Negaj8ZTQc",
+ "sin_aviso": true
 }

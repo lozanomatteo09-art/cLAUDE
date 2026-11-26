@@ -210,7 +210,7 @@ footer .eyebrow{{color:var(--eyeb);margin-bottom:22px}}
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family={gf}&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
 <style>{css}</style></head><body>
-<div class="demo">MUESTRA DE DISEÑO PARA {E(nombre.upper())} · Preparada por Matteo · No es el sitio oficial del negocio</div>
+{"" if d.get("sin_aviso") else f'<div class="demo">MUESTRA DE DISEÑO PARA {E(nombre.upper())} · Preparada por Matteo · No es el sitio oficial del negocio</div>'}
 <nav><div class="w"><a href="#" class="logo">{E(logo)}</a><div class="links"><a href="#menu">{'Servicios' if cita else 'Menú'}</a><a href="#nosotros">Nosotros</a><a href="#visitanos">Visítanos</a><a class="btn fill" href="{E(accion)}"{tgt}>{E(verbo_corto)}</a></div></div></nav>
 <header class="hero"><div class="w"><div>
 <p class="eyebrow">{E(d.get('eyebrow', ''))}</p>
