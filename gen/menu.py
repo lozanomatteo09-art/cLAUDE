@@ -66,7 +66,7 @@ h2{{font-family:'{fam}',serif;font-size:clamp(32px,4vw,46px);line-height:1.05;ma
 .btn{{display:inline-block;padding:15px 26px;border-radius:99px;font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase;background:{acc};color:#fff}}
 footer{{background:{foot};color:{cream};padding:34px 0;font-size:13px}}footer .w{{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;opacity:.75}}
 @media(max-width:820px){{.g{{grid-template-columns:1fr;gap:28px}}.g figure{{position:static;aspect-ratio:16/10}}header{{padding:56px 0}}.cat{{padding:52px 0}}}}
-</style></head><body>
+{"h1,h2,h3,.logo{font-weight:400!important;font-style:normal!important;letter-spacing:.01em}.logo span{text-transform:uppercase}" if d.get("fuente")=="lilita" else ""}</style></head><body>
 <nav><div class="w"><a href="../" class="logo">{f'<img src="{E(logo_src)}" alt="{E(nombre)}">' if logo_src else ''}<span>{E(d.get('logo_texto', nombre))}</span></a><a class="back" href="../">← Volver al inicio</a></div>
 <div class="chips">{chips}</div></nav>
 <header><div class="w"><p class="eb">{E(d.get('eyebrow', ''))}</p><h1>Nuestro menú</h1><p class="l">{E(d.get('menu_intro', d['intro']))}</p></div></header>

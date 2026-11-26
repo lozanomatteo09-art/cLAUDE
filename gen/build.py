@@ -29,6 +29,7 @@ FUENTES = {
     "cormorant": ("Cormorant Garamond", "Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600;1,700"),
     "fraunces":  ("Fraunces", "Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,600"),
     "dmserif":   ("DM Serif Display", "DM+Serif+Display:ital@0;1"),
+    "lilita":    ("Lilita One", "Lilita+One"),
     "playfair":  ("Playfair Display", "Playfair+Display:ital,wght@0,500;0,600;1,600"),
 }
 
@@ -272,6 +273,8 @@ if __name__ == "__main__":
                ".fh h3{font-size:24px;line-height:1.15}.fh span{font-weight:700;color:var(--acc);white-space:nowrap}.fb p{color:var(--muted);font-size:15px;margin-top:8px;line-height:1.55}"
                "@media(max-width:820px){.favs{padding:72px 0}.fgrid{grid-template-columns:1fr}}")
         out = out.replace("</style>", css + "</style>", 1)
+    if data.get("fuente") == "lilita":
+        out = out.replace("</style>", "h1,h2,h3,.serif,.logo,.item h3{font-weight:400!important;font-style:normal!important;letter-spacing:.01em}.logo span{text-transform:uppercase}</style>", 1)
     if data.get("menu_pagina"):
         out = out.replace('href="#menu"', 'href="menu/"')
         out = out.replace('<p class="note">', '<p class="note"><a href="menu/" style="font-weight:700;text-decoration:underline">Ver el menú completo →</a><br>', 1)
