@@ -264,7 +264,9 @@ if __name__ == "__main__":
             f'<div class="fb"><div class="fh"><h3>{html.escape(f[0])}</h3>{f"<span>{html.escape(f[2])}</span>" if f[2] else ""}</div><p>{html.escape(f[1])}</p></div></article>'
             for f in data["favoritos"])
         sec = ('<section class="favs" id="menu"><div class="w"><p class="eyebrow" style="color:var(--acc);margin-bottom:14px">Los favoritos</p>'
-               '<div class="fhead"><h2 class="serif">Lo más pedido de la casa</h2><a class="btn fill" href="menu/">Ver el menú completo</a></div>'
+               '<div class="fhead"><h2 class="serif">Lo más pedido de la casa</h2><div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn fill" href="menu/">Ver el menú completo</a>'
+               + (f'<a class="btn fill" style="background:#06c167;border-color:#06c167" href="{html.escape(data["uber_url"])}" target="_blank" rel="noopener">Pedir en Uber Eats</a>' if data.get("uber_url") else '')
+               + '</div></div>'
                f'<div class="fgrid">{cards}</div></div></section>')
         out = _re.sub(r'<section class="menu" id="menu">.*?</section>', lambda m: sec, out, count=1, flags=_re.S)
         css = (".favs{background:var(--cream);padding:110px 0}.fhead{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:44px}"
@@ -275,6 +277,9 @@ if __name__ == "__main__":
         out = out.replace("</style>", css + "</style>", 1)
     if data.get("fuente") == "lilita":
         out = out.replace("</style>", "h1,h2,h3,.serif,.logo,.item h3{font-weight:400!important;font-style:normal!important;letter-spacing:.01em}.logo span{text-transform:uppercase}</style>", 1)
+    if data.get("modo_pedido"):
+        for a, b in [("Reservar por WhatsApp", "Pedir por WhatsApp"), ("Reservar mesa", "Hacer un pedido"), (">Reservar<", ">Pedir<"), ("Reservas", "Pedidos"), ("Reservar", "Pedir")]:
+            out = out.replace(a, b)
     if data.get("menu_pagina"):
         out = out.replace('href="#menu"', 'href="menu/"')
         out = out.replace('<p class="note">', '<p class="note"><a href="menu/" style="font-weight:700;text-decoration:underline">Ver el menú completo →</a><br>', 1)

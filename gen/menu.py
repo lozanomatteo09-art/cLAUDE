@@ -24,8 +24,9 @@ for i, cat in enumerate(menu):
         items += (f'<div class="it"><div class="top"><h3>{E(n)}</h3><span class="dots"></span>'
                   f'{f"<b>{E(pr)}</b>" if pr else ""}</div>{f"<p>{E(desc)}</p>" if desc else ""}</div>')
     nota = f'<p class="cnota">{E(cat["nota"])}</p>' if cat.get("nota") else ""
-    foto = fotos[cat["foto"]] if "foto" in cat else fotos[(i + 2) % len(fotos)]
-    secciones += (f'<section class="cat" id="c{i}"><div class="w g"><figure><img src="{E(foto)}" alt="{E(cat["categoria"])}" loading="lazy"></figure>'
+    foto = fotos[cat["foto"]] if cat.get("foto") is not None else None
+    fig = f'<figure><img src="{E(foto)}" alt="{E(cat["categoria"])}" loading="lazy"></figure>' if foto else ""
+    secciones += (f'<section class="cat" id="c{i}"><div class="w g{"" if foto else " solo"}">{fig}'
                   f'<div><p class="eb">{E(nombre)}</p><h2>{E(cat["categoria"])}</h2>{nota}<div class="items">{items}</div></div></div></section>')
 chips = "".join(f'<a href="#c{i}">{E(c["categoria"].split(" · ")[0])}</a>' for i, c in enumerate(menu))
 nota_gral = d.get("nota_menu", "")
@@ -55,7 +56,7 @@ header p.l{{max-width:560px;opacity:.85;line-height:1.6}}
 .eb{{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:{acc}}}
 .cat{{padding:72px 0;border-bottom:1px solid rgba(0,0,0,.08)}}.cat:nth-child(even){{background:{cream}}}
 .g{{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:start}}
-.g figure{{border-radius:22px;overflow:hidden;aspect-ratio:4/5;position:sticky;top:150px}}
+.g.solo{{grid-template-columns:1fr;max-width:760px}}.g figure{{border-radius:22px;overflow:hidden;aspect-ratio:4/5;position:sticky;top:150px}}
 h2{{font-family:'{fam}',serif;font-size:clamp(32px,4vw,46px);line-height:1.05;margin:10px 0 18px}}
 .cnota{{display:inline-block;background:{accl}33;border:1px solid {accl};padding:10px 14px;border-radius:12px;font-size:14px;margin-bottom:22px}}
 .it{{padding:18px 0;border-bottom:1px dashed rgba(0,0,0,.15)}}
@@ -65,13 +66,13 @@ h2{{font-family:'{fam}',serif;font-size:clamp(32px,4vw,46px);line-height:1.05;ma
 .fin{{padding:72px 0;text-align:center}}.fin p{{color:{muted};max-width:560px;margin:0 auto 26px;line-height:1.6}}
 .btn{{display:inline-block;padding:15px 26px;border-radius:99px;font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase;background:{acc};color:#fff}}
 footer{{background:{foot};color:{cream};padding:34px 0;font-size:13px}}footer .w{{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;opacity:.75}}
-@media(max-width:820px){{.g{{grid-template-columns:1fr;gap:28px}}.g figure{{position:static;aspect-ratio:16/10}}header{{padding:56px 0}}.cat{{padding:52px 0}}}}
+@media(max-width:820px){{.g{{grid-template-columns:1fr;gap:28px}}.g.solo{{grid-template-columns:1fr;max-width:760px}}.g figure{{position:static;aspect-ratio:16/10}}header{{padding:56px 0}}.cat{{padding:52px 0}}}}
 {"h1,h2,h3,.logo{font-weight:400!important;font-style:normal!important;letter-spacing:.01em}.logo span{text-transform:uppercase}" if d.get("fuente")=="lilita" else ""}</style></head><body>
 <nav><div class="w"><a href="../" class="logo">{f'<img src="{E(logo_src)}" alt="{E(nombre)}">' if logo_src else ''}<span>{E(d.get('logo_texto', nombre))}</span></a><a class="back" href="../">← Volver al inicio</a></div>
 <div class="chips">{chips}</div></nav>
 <header><div class="w"><p class="eb">{E(d.get('eyebrow', ''))}</p><h1>Nuestro menú</h1><p class="l">{E(d.get('menu_intro', d['intro']))}</p></div></header>
 {secciones}
-<section class="fin"><div class="w"><p>{E(nota_gral)}</p><p>{E(d['direccion'])} · {E(horario)}</p><a class="btn" href="{E(maps)}" target="_blank" rel="noopener">Cómo llegar</a></div></section>
+<section class="fin"><div class="w"><p>{E(nota_gral)}</p><p>{E(d['direccion'])} · {E(horario)}</p><div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">{f'<a class="btn" href="https://wa.me/{E(d["whatsapp"])}?text={E("Hola, quiero hacer un pedido")}" target="_blank" rel="noopener">Pedir por WhatsApp</a>' if d.get("whatsapp") else ''}{f'<a class="btn" style="background:#06c167" href="{E(d["uber_url"])}" target="_blank" rel="noopener">Uber Eats</a>' if d.get("uber_url") else ''}<a class="btn" style="background:{ink}" href="{E(maps)}" target="_blank" rel="noopener">Cómo llegar</a></div></div></section>
 <footer><div class="w"><span>© 2026 {E(nombre)}</span><span>{E(d.get('legal', ''))}</span></div></footer>
 </body></html>"""
 os.makedirs(os.path.join(d["slug"], "menu"), exist_ok=True)

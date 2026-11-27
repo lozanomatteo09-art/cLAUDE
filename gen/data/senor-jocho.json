@@ -9,7 +9,7 @@
  "colonia": "Jardines del Moral",
  "titulo": "Señor Jocho León · Hot dogs y hamburguesas en Jardines del Moral",
  "h1": "Hot dogs y hamburguesas preparados al momento.",
- "intro": "Jochos con ingredientes generosos, hamburguesas de res, papas y malteadas. Un espacio relajado para comer en familia o con amigos en Jardines del Moral, León.",
+ "intro": "Hamburguesas, jochos, boneless, malteadas y café, preparados al momento. Visítenos en Jardines del Moral o pida a domicilio por WhatsApp o Uber Eats.",
  "nosotros_eyebrow": "Nosotros",
  "nosotros_titulo": "Calidad en cada ingrediente.",
  "nosotros_texto": "En Señor Jocho preparamos cada hot dog y cada hamburguesa al momento, con ingredientes frescos y porciones generosas. Contamos con juegos de mesa para que disfrute su visita con calma, solo o acompañado.",
@@ -31,11 +31,59 @@
  ],
  "menu": [
   {
-   "categoria": "Jochos rifados · especialidades de la casa",
+   "categoria": "Burgers rifadas",
+   "items": [
+    [
+     "La Doña Burger",
+     "Tocino, queso suizo, salsa de queso cheddar, queso fresco rallado, granos de elote, champiñones, guacamole, Ruffles, jitomate, cebolla caramelizada, mayonesa, ketchup y mostaza."
+    ],
+    [
+     "La Nana Pancha",
+     "Tocino, queso suizo, salsa de queso cheddar, queso Philadelphia, cebolla caramelizada y mayonesa."
+    ],
+    [
+     "La Mona Lisa",
+     "Pepperoni, queso suizo, queso parmesano y salsa de pizza."
+    ],
+    [
+     "La Potranca",
+     "Tocino, queso suizo, salsa de queso cheddar, BBQ, aros de cebolla empanizados y cebolla caramelizada."
+    ],
+    [
+     "La Aloha",
+     "Tocino, queso suizo, salsa de queso cheddar, piña, cebolla caramelizada, mayonesa, ketchup y mostaza."
+    ],
+    [
+     "La Bartola",
+     "Tocino, queso amarillo, jitomate, cebolla caramelizada, mayonesa, ketchup y mostaza."
+    ],
+    [
+     "La Chilli Burger",
+     "Nueva. Chili beans, queso suizo, salsa de queso cheddar, mostaza y cebolla caramelizada."
+    ]
+   ]
+  },
+  {
+   "categoria": "Burgers tradicionales",
+   "items": [
+    [
+     "La de Carrito",
+     "Carne clásica, queso americano, jitomate, cebolla, lechuga, ketchup, mostaza y mayonesa.",
+     "$89 · doble $159"
+    ],
+    [
+     "La Cheese Burger",
+     "Carne clásica y queso americano.",
+     "$89 · doble $149"
+    ]
+   ]
+  },
+  {
+   "categoria": "Jochos rifados",
    "items": [
     [
      "El Señor Jocho",
-     "Tocino, queso suizo, salsa de queso cheddar, queso fresco rallado, elote, champiñones, guacamole, Ruffles, jitomate, cebolla caramelizada, mayonesa, ketchup y mostaza."
+     "Tocino, queso suizo, salsa de queso cheddar, queso fresco rallado, granos de elote, champiñones, guacamole, Ruffles, jitomate, cebolla caramelizada, mayonesa, ketchup y mostaza."
     ],
     [
      "Los Panchos (trío de quesos)",
@@ -59,27 +107,7 @@
     ],
     [
      "El Chili Dog",
-     "Chili beans, queso suizo, salsa de queso cheddar, mostaza y cebolla caramelizada."
-    ]
-   ]
-  },
-  {
-   "categoria": "Elige tu salchicha",
-   "items": [
-    [
-     "Salchicha de pavo",
-     "Para cualquier jocho rifado.",
-     "$79"
-    ],
-    [
-     "Salchicha de res",
-     "Para cualquier jocho rifado.",
-     "$119"
-    ],
-    [
-     "Salchicha del mes",
-     "Para cualquier jocho rifado.",
-     "$119"
+     "Nuevo. Chili beans, queso suizo, salsa de queso cheddar, mostaza y cebolla caramelizada."
     ]
    ]
   },
@@ -90,16 +118,11 @@
      "El Chabelo",
      "Salchicha de pavo, salsa de queso cheddar, jitomate, ketchup, mayonesa y mostaza.",
      "$39"
-    ],
-    [
-     "Pan ajo-parmesano",
-     "Agrégaselo a cualquier jocho.",
-     "+$10"
     ]
    ]
   }
  ],
- "nota_menu": "Consulte en sucursal nuestras hamburguesas, papas, crepas, malteadas y combos.",
+ "nota_menu": "Cualquier receta se puede hacer vegetariana. Servicio a domicilio en los alrededores por WhatsApp y también en Uber Eats.",
  "resenas": [
   [
    "No es solo una comida rápida; es una experiencia de sabor que te vuela la cabeza desde el primer bocado. Las hamburguesas son una verdadera joya, con carne en su punto y combinaciones que se sienten súper frescas.",
@@ -120,26 +143,77 @@
    "2:00 pm – 10:30 pm"
   ]
  ],
- "direccion": "Av. Paseo del Moral, Jardines del Moral, León, Gto.",
- "telefono": "",
- "whatsapp": "",
+ "direccion": "Av. Paseo del Moral 421, Jardines del Moral, León, Gto.",
+ "telefono": "479 315 3897",
+ "whatsapp": "524793153897",
  "instagram": "https://www.instagram.com/srjocholeon/",
- "cta_texto": "Cómo llegar",
  "legal": "Todos los derechos reservados",
  "maps_url": "https://www.google.com/maps/search/?api=1&query=Se%C3%B1or%20Jocho%20Le%C3%B3n&query_place_id=ChIJrxJVwKC_K4QR2Negaj8ZTQc",
  "sin_aviso": true,
  "logo_img": "logo.jpg",
  "indexar": true,
  "menu_pagina": true,
- "menu_intro": "Jochos rifados, jochos tradicionales y más, preparados al momento con ingredientes frescos.",
+ "menu_intro": "Burgers y jochos rifados, tradicionales, para acompañar, postres, bebidas y café. Cualquier receta se puede hacer vegetariana.",
  "menu_completo": [
   {
-   "categoria": "Jochos rifados · especialidades de la casa",
-   "nota": "Precio según la salchicha: pavo $79 · res $119 · salchicha del mes $119",
+   "categoria": "Burgers rifadas",
+   "foto": 4,
+   "nota": "Carne clásica 150 g: sencilla $119 · doble $179  |  Angus Beef 170 g, la estrella de la casa: sencilla $169 · doble $199",
+   "items": [
+    [
+     "La Doña Burger",
+     "Tocino, queso suizo, salsa de queso cheddar, queso fresco rallado, granos de elote, champiñones, guacamole, Ruffles, jitomate, cebolla caramelizada, mayonesa, ketchup y mostaza."
+    ],
+    [
+     "La Nana Pancha",
+     "Tocino, queso suizo, salsa de queso cheddar, queso Philadelphia, cebolla caramelizada y mayonesa."
+    ],
+    [
+     "La Mona Lisa",
+     "Pepperoni, queso suizo, queso parmesano y salsa de pizza."
+    ],
+    [
+     "La Potranca",
+     "Tocino, queso suizo, salsa de queso cheddar, BBQ, aros de cebolla empanizados y cebolla caramelizada."
+    ],
+    [
+     "La Aloha",
+     "Tocino, queso suizo, salsa de queso cheddar, piña, cebolla caramelizada, mayonesa, ketchup y mostaza."
+    ],
+    [
+     "La Bartola",
+     "Tocino, queso amarillo, jitomate, cebolla caramelizada, mayonesa, ketchup y mostaza."
+    ],
+    [
+     "La Chilli Burger",
+     "Nueva. Chili beans, queso suizo, salsa de queso cheddar, mostaza y cebolla caramelizada."
+    ]
+   ]
+  },
+  {
+   "categoria": "Burgers tradicionales",
+   "foto": 5,
+   "items": [
+    [
+     "La de Carrito",
+     "Carne clásica, queso americano, jitomate, cebolla, lechuga, ketchup, mostaza y mayonesa.",
+     "$89 · doble $159"
+    ],
+    [
+     "La Cheese Burger",
+     "Carne clásica y queso americano.",
+     "$89 · doble $149"
+    ]
+   ]
+  },
+  {
+   "categoria": "Jochos rifados",
+   "foto": 6,
+   "nota": "Salchicha de pavo $79 · salchicha de res $129",
    "items": [
     [
      "El Señor Jocho",
-     "Tocino, queso suizo, salsa de queso cheddar, queso fresco rallado, elote, champiñones, guacamole, Ruffles, jitomate, cebolla caramelizada, mayonesa, ketchup y mostaza."
+     "Tocino, queso suizo, salsa de queso cheddar, queso fresco rallado, granos de elote, champiñones, guacamole, Ruffles, jitomate, cebolla caramelizada, mayonesa, ketchup y mostaza."
     ],
     [
      "Los Panchos (trío de quesos)",
@@ -163,56 +237,183 @@
     ],
     [
      "El Chili Dog",
-     "Chili beans, queso suizo, salsa de queso cheddar, mostaza y cebolla caramelizada."
+     "Nuevo. Chili beans, queso suizo, salsa de queso cheddar, mostaza y cebolla caramelizada."
     ]
-   ],
-   "foto": 6
+   ]
   },
   {
    "categoria": "Jochos tradicionales",
+   "foto": 0,
    "items": [
     [
      "El Chabelo",
      "Salchicha de pavo, salsa de queso cheddar, jitomate, ketchup, mayonesa y mostaza.",
      "$39"
     ]
-   ],
-   "foto": 0
+   ]
   },
   {
    "categoria": "Extras",
+   "foto": 7,
    "items": [
     [
-     "Pan ajo-parmesano",
-     "Agrégaselo a cualquier jocho.",
-     "+$10"
+     "Hazlo combo",
+     "Para cualquier burger o jocho.",
+     "+$69"
     ],
     [
-     "Hazlo combo",
-     "Pregunte por los combos disponibles en sucursal."
+     "Pan ajo-parmesano",
+     "Agrégalo a tu burger o jocho.",
+     "+$10"
     ]
-   ],
-   "foto": 7
+   ]
+  },
+  {
+   "categoria": "Para acompañar",
+   "foto": 7,
+   "items": [
+    [
+     "Aros de cebolla",
+     "10 piezas de aros de cebolla empanizados, crujientes y doraditos.",
+     "$95"
+    ],
+    [
+     "Papas a la francesa",
+     "220 g.",
+     "$79"
+    ],
+    [
+     "Papas de feria",
+     "210 g de papas a la francesa con salsa de queso cheddar y el topping de tu elección: guacamole o tocino.",
+     "$99"
+    ]
+   ]
+  },
+  {
+   "categoria": "Otras delicias",
+   "foto": null,
+   "items": [
+    [
+     "Boneless",
+     "200 g de pechuga de pollo empanizada, bañada en tu salsa favorita (BBQ, Búfalo hot, mango habanero o naturales), con aderezo blue cheese y papas a la francesa.",
+     "$119"
+    ],
+    [
+     "Banderilla",
+     "Bañada con salsa de queso cheddar, Ruffles en trocitos, queso fresco rallado, mayonesa, ketchup y mostaza.",
+     "$59"
+    ]
+   ]
+  },
+  {
+   "categoria": "Postres",
+   "foto": null,
+   "items": [
+    [
+     "Flotante",
+     "Nieve de limón o vainilla servida con tu refresco favorito.",
+     "$69"
+    ],
+    [
+     "Helado",
+     "Dos bolas de vainilla, fresa, chocolate o limón con la cobertura de tu elección: chocolate, rompope, Oreo, Baileys, mazapán o Kahlúa.",
+     "$69"
+    ]
+   ]
+  },
+  {
+   "categoria": "Bebidas",
+   "foto": null,
+   "items": [
+    [
+     "Refrescos y aguas frescas",
+     "",
+     "$39"
+    ],
+    [
+     "Soda italiana",
+     "Agua mineralizada con jarabe de frutas naturales: kiwi, manzana, moras o maracuyá.",
+     "$59"
+    ],
+    [
+     "Malteadas",
+     "Fresa, Oreo, Nutella, rompope, Baileys, mazapán, vainilla o chai.",
+     "$98"
+    ]
+   ]
+  },
+  {
+   "categoria": "Un cafecito",
+   "foto": null,
+   "items": [
+    [
+     "Espresso",
+     "",
+     "$35"
+    ],
+    [
+     "Americano",
+     "",
+     "$45"
+    ],
+    [
+     "Cappuccino",
+     "",
+     "$65"
+    ],
+    [
+     "Cappuccino saborizado",
+     "Mochaccino, Baileys o rompope.",
+     "$79"
+    ],
+    [
+     "Nutelatte",
+     "Nuevo.",
+     "$75"
+    ],
+    [
+     "Chai latte",
+     "",
+     "$79"
+    ],
+    [
+     "Dirty chai",
+     "",
+     "$75"
+    ],
+    [
+     "Affogato",
+     "",
+     "$69"
+    ],
+    [
+     "Chocolate caliente",
+     "",
+     "$69"
+    ]
+   ]
   }
  ],
  "favoritos": [
   [
-   "El Señor Jocho",
-   "El de la casa: tocino, queso suizo, cheddar, queso fresco, elote, champiñones, guacamole, Ruffles y cebolla caramelizada.",
-   "desde $79",
-   6
-  ],
-  [
-   "El Bronco",
-   "Tocino, queso suizo, salsa de queso cheddar, BBQ, aros de cebolla empanizados y cebolla caramelizada.",
-   "desde $79",
-   0
-  ],
-  [
-   "Hamburguesas",
-   "Carne de res en su punto, preparadas al momento y acompañadas de papas.",
-   "",
+   "La de Carrito",
+   "Carne clásica, queso americano, jitomate, cebolla, lechuga, ketchup, mostaza y mayonesa.",
+   "$89",
    2
+  ],
+  [
+   "La Potranca",
+   "Tocino, queso suizo, salsa de queso cheddar, BBQ, aros de cebolla empanizados y cebolla caramelizada.",
+   "desde $119",
+   4
+  ],
+  [
+   "El Hula",
+   "Salchicha de res, tocino, queso suizo, salsa de queso cheddar, piña, cebolla caramelizada, mayonesa, ketchup y mostaza.",
+   "$129",
+   0
   ]
- ]
+ ],
+ "uber_url": "https://www.ubereats.com/mx/search?q=Se%C3%B1or%20Jocho%20Le%C3%B3n",
+ "modo_pedido": true
 }
