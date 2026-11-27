@@ -280,6 +280,19 @@ if __name__ == "__main__":
     if data.get("modo_pedido"):
         for a, b in [("Reservar por WhatsApp", "Pedir por WhatsApp"), ("Reservar mesa", "Hacer un pedido"), (">Reservar<", ">Pedir<"), ("Reservas", "Pedidos"), ("Reservar", "Pedir")]:
             out = out.replace(a, b)
+    if data.get("orden_pedido"):
+        import re as _re2
+        mp = html.escape(data["maps_url"])
+        ir = f'<a class="btn line" href="{mp}" target="_blank" rel="noopener">📍 Cómo llegar</a>'
+        out = _re2.sub(r'(<header class="hero">.*?<div class="cta">.*?)(</div>)', lambda m: m.group(1) + ir + m.group(2), out, count=1, flags=_re2.S)
+        out = out.replace('<a href="#visitanos">Visítanos</a>', f'<a class="btn line navir" href="{mp}" target="_blank" rel="noopener">📍 Cómo llegar</a>', 1)
+        out = out.replace("</style>", ".navir{padding:10px 14px!important;font-size:11px!important}@media(max-width:820px){.links .navir{display:inline-flex!important}}</style>", 1)
+        out = out.replace("quiero%20reservar%20una%20mesa%20en", "quiero%20hacer%20un%20pedido%20en")
+        nos = _re2.search(r'<section id="nosotros">.*?</section>', out, _re2.S).group(0)
+        favs = _re2.search(r'<section class="favs" id="menu">.*?</section>', out, _re2.S).group(0)
+        vis = _re2.search(r'<section class="visit" id="visitanos">.*?</section>', out, _re2.S).group(0)
+        out = out.replace(nos, "@@NOS@@", 1).replace(favs, "@@FAV@@", 1).replace(vis, "@@VIS@@", 1)
+        out = out.replace("@@NOS@@", favs + vis, 1).replace("@@FAV@@", nos, 1).replace("@@VIS@@", "", 1)
     if data.get("menu_pagina"):
         out = out.replace('href="#menu"', 'href="menu/"')
         out = out.replace('<p class="note">', '<p class="note"><a href="menu/" style="font-weight:700;text-decoration:underline">Ver el menú completo →</a><br>', 1)

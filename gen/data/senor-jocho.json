@@ -415,5 +415,6 @@
   ]
  ],
  "uber_url": "https://www.ubereats.com/mx/search?q=Se%C3%B1or%20Jocho%20Le%C3%B3n",
- "modo_pedido": true
+ "modo_pedido": true,
+ "orden_pedido": true
 }
