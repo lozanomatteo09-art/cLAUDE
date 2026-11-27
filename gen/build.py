@@ -293,6 +293,29 @@ if __name__ == "__main__":
         vis = _re2.search(r'<section class="visit" id="visitanos">.*?</section>', out, _re2.S).group(0)
         out = out.replace(nos, "@@NOS@@", 1).replace(favs, "@@FAV@@", 1).replace(vis, "@@VIS@@", 1)
         out = out.replace("@@NOS@@", favs + vis, 1).replace("@@FAV@@", nos, 1).replace("@@VIS@@", "", 1)
+    if data.get("galeria_fotos"):
+        import re as _re3
+        gf = data["galeria_fotos"]
+        figs = "".join(f'<button class="gi" data-i="{i}" aria-label="Ver foto {i+1}"><img src="{html.escape(u)}" alt="{html.escape(data["nombre"])}" loading="lazy"></button>' for i, u in enumerate(gf))
+        ig = data.get("instagram", "")
+        gsec = ('<section class="gal" id="galeria"><div class="w"><p class="eyebrow" style="color:var(--acc);margin-bottom:14px">Galería</p>'
+                '<div class="fhead"><h2 class="serif">Así se ve el antojo</h2>'
+                + (f'<a class="btn line" href="{html.escape(ig)}" target="_blank" rel="noopener">Ver más en Instagram</a>' if ig else '')
+                + f'</div><div class="ggrid">{figs}</div></div></section>'
+                '<div class="lb" id="lb" hidden><button class="lbx" aria-label="Cerrar">×</button><button class="lbp" aria-label="Anterior">‹</button><img alt=""><button class="lbn" aria-label="Siguiente">›</button></div>')
+        out = _re3.sub(r'<p class="eyebrow">Galería</p><div class="strip">.*?</div>', '', out, count=1, flags=_re3.S)
+        out = out.replace("<footer>", gsec + "<footer>", 1)
+        css = (".gal{padding:110px 0;background:var(--paper)}.ggrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}"
+               ".gi{border:0;padding:0;cursor:zoom-in;border-radius:18px;overflow:hidden;aspect-ratio:4/5;background:#ddd}.gi img{width:100%;height:100%;object-fit:cover;transition:transform .5s}.gi:hover img{transform:scale(1.04)}"
+               ".lb{position:fixed;inset:0;z-index:100;background:rgba(10,8,8,.94);display:flex;align-items:center;justify-content:center}.lb[hidden]{display:none}"
+               ".lb img{max-width:92vw;max-height:86vh;border-radius:12px;object-fit:contain}.lb button{position:absolute;background:none;border:0;color:#fff;font-size:44px;cursor:pointer;padding:16px}"
+               ".lbx{top:8px;right:14px}.lbp{left:6px}.lbn{right:6px}@media(max-width:820px){.gal{padding:72px 0}.ggrid{grid-template-columns:repeat(2,1fr);gap:8px}.gi{border-radius:12px}}")
+        js = ("<script>(()=>{const g=[...document.querySelectorAll('.gi img')].map(i=>i.src),lb=document.getElementById('lb'),im=lb.querySelector('img');let k=0;"
+              "const sh=n=>{k=(n+g.length)%g.length;im.src=g[k];lb.hidden=false};"
+              "document.querySelectorAll('.gi').forEach(b=>b.onclick=()=>sh(+b.dataset.i));"
+              "lb.querySelector('.lbx').onclick=()=>lb.hidden=true;lb.querySelector('.lbp').onclick=e=>{e.stopPropagation();sh(k-1)};lb.querySelector('.lbn').onclick=e=>{e.stopPropagation();sh(k+1)};"
+              "lb.onclick=e=>{if(e.target===lb)lb.hidden=true};document.addEventListener('keydown',e=>{if(lb.hidden)return;if(e.key==='Escape')lb.hidden=true;if(e.key==='ArrowLeft')sh(k-1);if(e.key==='ArrowRight')sh(k+1)})})()</script>")
+        out = out.replace("</style>", css + "</style>", 1).replace("</body>", js + "</body>", 1)
     if data.get("menu_pagina"):
         out = out.replace('href="#menu"', 'href="menu/"')
         out = out.replace('<p class="note">', '<p class="note"><a href="menu/" style="font-weight:700;text-decoration:underline">Ver el menú completo →</a><br>', 1)

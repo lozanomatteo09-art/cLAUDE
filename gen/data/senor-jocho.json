@@ -417,5 +417,16 @@
  "uber_url": "https://www.ubereats.com/mx/search?q=Se%C3%B1or%20Jocho%20Le%C3%B3n",
  "modo_pedido": true,
  "orden_pedido": true,
- "visita_titulo": "Te esperamos en Jardines del Moral."
+ "visita_titulo": "Te esperamos en Jardines del Moral.",
+ "galeria_fotos": [
+  "img/g1.jpg",
+  "img/g2.jpg",
+  "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RMP9PcFL2Pqwylx0cbjb2vqLsEl07frrow2AEcge6QesW1HampTvortvoSjPP_e0WXXFAZIeLx6V0T06C2UTCr6Ov3Xz5yO0eBEcvaHJgSiVgTNWPp0hFqCZZKe0nJyUAhlTPyUQ61DfPP=s4800-w1200",
+  "img/g4.jpg",
+  "img/g5.jpg",
+  "img/g6.jpg",
+  "img/g7.jpg",
+  "img/g8.jpg",
+  "img/g9.jpg"
+ ]
 }
