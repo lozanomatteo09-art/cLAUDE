@@ -427,7 +427,10 @@
   "img/g6.jpg",
   "img/g7.jpg",
   "img/g8.jpg",
-  "img/g9.jpg"
+  "img/g9.jpg",
+  "img/g13.jpg",
+  "img/g10.jpg",
+  "img/g12.jpg"
  ],
  "fotos_platillos": {
   "La de Carrito": "img/m_carrito.jpg",
@@ -437,10 +440,12 @@
   "El Hula": "img/m_hula.jpg",
   "El Chili Dog": "img/m_chilidog.jpg",
   "El Bronco": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RMP9PcFL2Pqwylx0cbjb2vqLsEl07frrow2AEcge6QesW1HampTvortvoSjPP_e0WXXFAZIeLx6V0T06C2UTCr6Ov3Xz5yO0eBEcvaHJgSiVgTNWPp0hFqCZZKe0nJyUAhlTPyUQ61DfPP=s4800-w1200",
-  "El Señor Jocho": "https://lh3.googleusercontent.com/grass-cs/AABkmLeSBFqvs16qwc6gWb0a_4hZwU-iL1lGwGRZxzzreHGseaUxGgEKTXxrTBrXUWi-2kU_2zVhyjV3NzvgUs84LTy884z0ogPWbfsxYO7kUEvVqPwvKtK4KqOKbzrAIjIQBAvxIUdc=s4800-w1200",
+  "El Señor Jocho": "img/m_senorjocho.jpg",
   "Boneless": "img/m_boneless.jpg",
   "Papas de feria": "img/m_papasferia.jpg",
   "Affogato": "img/m_affogato.jpg",
-  "Malteadas": "img/m_malteada.jpg"
+  "Malteadas": "img/m_malteada.jpg",
+  "La Doña Burger": "img/m_dona.jpg",
+  "La Bartola": "img/m_bartola.jpg"
  }
 }
